@@ -5,7 +5,7 @@ import { Star, Quote } from "lucide-react";
 import { testimonials } from "@/lib/data";
 import BookConsultationCTA from "@/components/home/BookConsultationCTA";
 
-export const metadata: Metadata = { title: "Testimonials", description: "Read what our clients say about their experience with Mitchell & Associates." };
+export const metadata: Metadata = { title: "Testimonials", description: "Read what our clients say about their experience with Vamshi Associations." };
 
 export default function TestimonialsPage() {
   return (

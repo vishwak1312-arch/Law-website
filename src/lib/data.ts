@@ -1,17 +1,17 @@
 // ─── SITE-WIDE DATA & CONSTANTS ───
 
 export const siteConfig = {
-  name: process.env.NEXT_PUBLIC_LAW_FIRM_NAME || "Mitchell & Associates",
+  name: process.env.NEXT_PUBLIC_LAW_FIRM_NAME || "Vamshi Associations",
   attorney: process.env.NEXT_PUBLIC_ATTORNEY_NAME || "Vamshi",
-  title: "Trusted Legal Representation | Mitchell & Associates",
-  description: "Mitchell & Associates provides premium legal services in corporate law, family law, criminal defense, and more. Schedule your confidential consultation today.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://mitchelllaw.com",
+  title: "Trusted Legal Representation | Vamshi Associations",
+  description: "Vamshi Associations provides premium legal services in corporate law, family law, criminal defense, and more. Schedule your confidential consultation today.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://vamshi.com",
   phone: process.env.NEXT_PUBLIC_ATTORNEY_PHONE || "9160108188",
   email: process.env.NEXT_PUBLIC_ATTORNEY_EMAIL || "vishwak1312@gmail.com",
   emergencyPhone: "(555) 234-9999",
   address: process.env.NEXT_PUBLIC_OFFICE_ADDRESS || "1200 Legal Avenue, Suite 450, New York, NY 10001",
   whatsapp: process.env.NEXT_PUBLIC_ATTORNEY_WHATSAPP || "919160108188",
-  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/mitchell-law/consultation",
+  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/vamshi/consultation",
   tawkToId: process.env.NEXT_PUBLIC_TAWKTO_ID || "YOUR_TAWKTO_ID",
   googleMapsEmbed: process.env.NEXT_PUBLIC_GOOGLE_MAPS_EMBED_URL || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215!2d-73.9857!3d40.7484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjIiTiA3M8KwNTknMDguNSJX!5e0!3m2!1sen!2sus!4v1",
   hours: {
@@ -44,11 +44,11 @@ export const practiceAreas = [
 ];
 
 export const testimonials = [
-  { name: "Sarah Thompson", role: "Business Owner", photo: "/attorney-portrait.png", rating: 5, review: "James Mitchell provided exceptional legal counsel during our corporate restructuring. His attention to detail and strategic thinking saved our company millions. I cannot recommend him highly enough." },
-  { name: "Michael Rodriguez", role: "Real Estate Developer", photo: "/attorney-portrait.png", rating: 5, review: "Outstanding representation in a complex property dispute. Attorney Mitchell's thorough preparation and courtroom presence led to a favorable settlement. His team is professional and responsive." },
-  { name: "Emily Chen", role: "Tech Entrepreneur", photo: "/attorney-portrait.png", rating: 5, review: "Mitchell & Associates handled our intellectual property portfolio with incredible expertise. They secured multiple trademarks and patents efficiently. Their knowledge of IP law is unmatched." },
-  { name: "David Williams", role: "Healthcare Executive", photo: "/attorney-portrait.png", rating: 5, review: "During a critical employment dispute, James provided calm, strategic guidance that resolved the matter favorably. His communication throughout the process was exemplary." },
-  { name: "Jennifer Martinez", role: "Family Client", photo: "/attorney-portrait.png", rating: 5, review: "Going through my divorce was incredibly difficult, but Attorney Mitchell handled everything with compassion and professionalism. He fought for my rights while keeping my children's best interests first." },
+  { name: "Sarah Thompson", role: "Business Owner", photo: "/attorney-portrait.png", rating: 5, review: "Vamshi provided exceptional legal counsel during our corporate restructuring. His attention to detail and strategic thinking saved our company millions. I cannot recommend him highly enough." },
+  { name: "Michael Rodriguez", role: "Real Estate Developer", photo: "/attorney-portrait.png", rating: 5, review: "Outstanding representation in a complex property dispute. Attorney Vamshi's thorough preparation and courtroom presence led to a favorable settlement. His team is professional and responsive." },
+  { name: "Emily Chen", role: "Tech Entrepreneur", photo: "/attorney-portrait.png", rating: 5, review: "Vamshi Associations handled our intellectual property portfolio with incredible expertise. They secured multiple trademarks and patents efficiently. Their knowledge of IP law is unmatched." },
+  { name: "David Williams", role: "Healthcare Executive", photo: "/attorney-portrait.png", rating: 5, review: "During a critical employment dispute, Vamshi provided calm, strategic guidance that resolved the matter favorably. His communication throughout the process was exemplary." },
+  { name: "Jennifer Martinez", role: "Family Client", photo: "/attorney-portrait.png", rating: 5, review: "Going through my divorce was incredibly difficult, but Attorney Vamshi handled everything with compassion and professionalism. He fought for my rights while keeping my children's best interests first." },
 ];
 
 export const blogPosts = [

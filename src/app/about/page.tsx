@@ -13,7 +13,7 @@ const timeline = [
   { year: "2012", title: "Harvard Law School", desc: "Graduated with honors, J.D." },
   { year: "2013", title: "NY Bar Admission", desc: "Admitted to practice in New York State" },
   { year: "2014", title: "Associate Attorney", desc: "Started at a top NYC firm" },
-  { year: "2016", title: "Founded the Firm", desc: "Established Mitchell & Associates" },
+  { year: "2016", title: "Founded the Firm", desc: "Established Vamshi Associations" },
   { year: "2020", title: "Super Lawyers", desc: "Named Rising Star 2020–2026" },
   { year: "2024", title: "500+ Cases", desc: "Milestone of cases successfully resolved" },
 ];
@@ -51,10 +51,10 @@ export default function AboutPage() {
               <p className="text-gold font-semibold mb-6">Founder & Managing Partner</p>
 
               <div className="space-y-4 text-gray-600 leading-relaxed mb-8">
-                <p>James Mitchell is a distinguished attorney with over a decade of experience providing strategic legal counsel to individuals and businesses across New York. A graduate of Harvard Law School, he combines academic rigor with practical courtroom expertise.</p>
-                <p>Before founding Mitchell & Associates, James honed his skills at one of New York&apos;s leading law firms, where he gained invaluable experience in corporate transactions, complex litigation, and regulatory matters.</p>
-                <p>Driven by a commitment to justice and client advocacy, James established Mitchell & Associates to provide the personalized, high-quality representation that every client deserves. His approach combines meticulous preparation with aggressive advocacy.</p>
-                <p>Outside the courtroom, James is an active member of the legal community, frequently speaking at conferences, publishing articles, and mentoring young attorneys. He is passionate about making legal services accessible and demystifying the legal process for his clients.</p>
+                <p>Vamshi is a distinguished attorney with over a decade of experience providing strategic legal counsel to individuals and businesses across New York. A graduate of Harvard Law School, he combines academic rigor with practical courtroom expertise.</p>
+                <p>Before founding Vamshi Associations, Vamshi honed his skills at one of New York&apos;s leading law firms, where he gained invaluable experience in corporate transactions, complex litigation, and regulatory matters.</p>
+                <p>Driven by a commitment to justice and client advocacy, Vamshi established Vamshi Associations to provide the personalized, high-quality representation that every client deserves. His approach combines meticulous preparation with aggressive advocacy.</p>
+                <p>Outside the courtroom, Vamshi is an active member of the legal community, frequently speaking at conferences, publishing articles, and mentoring young attorneys. He is passionate about making legal services accessible and demystifying the legal process for his clients.</p>
               </div>
 
               {/* Education & Admissions */}

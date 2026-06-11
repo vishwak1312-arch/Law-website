@@ -5,7 +5,7 @@ import { FadeUp, SectionHeading } from "@/components/Motion";
 import { Clock, ArrowRight } from "lucide-react";
 import { blogPosts } from "@/lib/data";
 
-export const metadata: Metadata = { title: "Blog", description: "Legal insights, guides, and updates from the attorneys at Mitchell & Associates." };
+export const metadata: Metadata = { title: "Blog", description: "Legal insights, guides, and updates from the attorneys at Vamshi Associations." };
 
 const categories = ["All", ...Array.from(new Set(blogPosts.map((p) => p.category)))];
 

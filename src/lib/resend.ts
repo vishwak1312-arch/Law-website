@@ -9,11 +9,11 @@ const resend = process.env.RESEND_API_KEY
   : null;
 
 const FROM_EMAIL =
-  process.env.RESEND_FROM_EMAIL || "noreply@mitchelllaw.com";
+  process.env.RESEND_FROM_EMAIL || "noreply@vamshi.com";
 const ATTORNEY_EMAIL =
-  process.env.NEXT_PUBLIC_ATTORNEY_EMAIL || "contact@mitchelllaw.com";
+  process.env.NEXT_PUBLIC_ATTORNEY_EMAIL || "contact@vamshi.com";
 const FIRM_NAME =
-  process.env.NEXT_PUBLIC_LAW_FIRM_NAME || "Mitchell & Associates";
+  process.env.NEXT_PUBLIC_LAW_FIRM_NAME || "Vamshi Associations";
 
 // ─── HTML EMAIL TEMPLATE (shared wrapper) ───
 function emailWrapper(content: string): string {

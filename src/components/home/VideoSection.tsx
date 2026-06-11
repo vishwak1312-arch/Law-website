@@ -12,7 +12,7 @@ export default function VideoSection() {
         <SectionHeading
           label="Introduction"
           title="Meet Your Attorney"
-          description="Watch a brief introduction from Attorney James Mitchell about our firm's approach to legal representation."
+          description="Watch a brief introduction from Attorney Vamshi about our firm's approach to legal representation."
         />
 
         <FadeUp className="max-w-4xl mx-auto">

@@ -21,7 +21,7 @@ export default function AboutPreview() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-navy/5 to-gold/10 rounded-2xl rotate-2" />
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/law-office.png" alt="Mitchell & Associates Office" width={600} height={500} className="w-full h-auto object-cover" />
+                <Image src="/law-office.png" alt="Vamshi Associations Office" width={600} height={500} className="w-full h-auto object-cover" />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-gold text-white px-8 py-4 rounded-xl shadow-xl">
                 <p className="font-heading text-2xl font-bold">500+</p>
@@ -39,10 +39,10 @@ export default function AboutPreview() {
               Meet Your Attorney
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              James Mitchell is a seasoned attorney with over a decade of experience providing strategic legal solutions to individuals and businesses. A graduate of Harvard Law School, he has built a reputation for meticulous preparation, aggressive advocacy, and genuine client care.
+              Vamshi is a seasoned attorney with over a decade of experience providing strategic legal solutions to individuals and businesses. A graduate of Harvard Law School, he has built a reputation for meticulous preparation, aggressive advocacy, and genuine client care.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
-              At Mitchell & Associates, we believe every client deserves personalized attention and a clear path forward. Whether you&apos;re facing a complex business transaction, a family crisis, or a criminal charge, we fight to protect what matters most to you.
+              At Vamshi Associations, we believe every client deserves personalized attention and a clear path forward. Whether you&apos;re facing a complex business transaction, a family crisis, or a criminal charge, we fight to protect what matters most to you.
             </p>
 
             {/* Credentials */}
