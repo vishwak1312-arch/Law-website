@@ -32,8 +32,8 @@ export default function CaseResultsStats() {
   return (
     <section className="py-20 lg:py-28 bg-navy relative overflow-hidden">
       {/* Decorative */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-6 relative">
         <motion.div
@@ -42,7 +42,7 @@ export default function CaseResultsStats() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-1.5 bg-gold/10 text-gold text-xs font-semibold uppercase tracking-[0.2em] rounded-full mb-4">
+          <span className="inline-block px-4 py-1.5 bg-white/10 text-white text-xs font-semibold uppercase tracking-[0.2em] rounded-full mb-4">
             Our Track Record
           </span>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white">
@@ -60,7 +60,7 @@ export default function CaseResultsStats() {
               transition={{ delay: i * 0.15 }}
               className="text-center"
             >
-              <p className="font-heading text-5xl md:text-6xl font-bold text-gold mb-2">
+              <p className="font-heading text-5xl md:text-6xl font-bold text-white mb-2">
                 <Counter value={value} suffix={suffix} />
               </p>
               <p className="text-white/60 text-sm font-medium uppercase tracking-wider">{label}</p>

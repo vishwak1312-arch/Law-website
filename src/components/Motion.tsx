@@ -66,7 +66,7 @@ export function SectionHeading({
   return (
     <FadeUp className={`${center ? 'text-center' : ''} mb-12 lg:mb-16`}>
       {label && (
-        <span className="inline-block px-4 py-1.5 bg-gold/10 text-gold text-xs font-semibold uppercase tracking-[0.2em] rounded-full mb-4">
+        <span className="inline-block px-4 py-1.5 bg-navy/10 text-navy text-xs font-semibold uppercase tracking-[0.2em] rounded-full mb-4">
           {label}
         </span>
       )}

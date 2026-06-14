@@ -6,17 +6,17 @@ import { Phone, Calendar, Award, Users, ThumbsUp, BadgeCheck } from "lucide-reac
 import { siteConfig } from "@/lib/data";
 
 const trustBadges = [
-  { icon: Award, label: "10+ Years", sub: "Experience" },
+  { icon: Award, label: "20+ Years", sub: "Experience" },
   { icon: Users, label: "500+", sub: "Cases Handled" },
   { icon: ThumbsUp, label: "98%", sub: "Satisfaction" },
-  { icon: BadgeCheck, label: "Licensed", sub: "Attorney" },
+  { icon: BadgeCheck, label: "Licensed", sub: "Advocate" },
 ];
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-white via-light to-white">
       {/* Subtle background pattern */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230B1F3A' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")" }} />
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230a0a0a' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")" }} />
 
       <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -42,7 +42,7 @@ export default function Hero() {
               <span className="relative">
                 Representation
                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
-                  <path d="M2 10C50 4 150 2 298 6" stroke="#C8A45D" strokeWidth="3" strokeLinecap="round" />
+                  <path d="M2 10C50 4 150 2 298 6" stroke="#333333" strokeWidth="3" strokeLinecap="round" />
                 </svg>
               </span>
               {" "}When It Matters Most
@@ -65,7 +65,7 @@ export default function Hero() {
             >
               <Link
                 href="/book-consultation"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold text-white font-semibold rounded-lg hover:bg-gold-dark transition-all duration-300 shadow-xl shadow-gold/25 hover:shadow-gold/40 hover:-translate-y-0.5 text-sm"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-navy text-white font-semibold rounded-lg hover:bg-navy-light transition-all duration-300 shadow-xl shadow-navy/25 hover:shadow-navy/40 hover:-translate-y-0.5 text-sm"
               >
                 <Calendar className="w-4 h-4" />
                 Book Consultation
@@ -88,7 +88,7 @@ export default function Hero() {
             >
               {trustBadges.map(({ icon: Icon, label, sub }, i) => (
                 <div key={i} className="text-center p-3 rounded-xl bg-white shadow-sm border border-gray-100">
-                  <Icon className="w-5 h-5 text-gold mx-auto mb-1.5" />
+                  <Icon className="w-5 h-5 text-navy mx-auto mb-1.5" />
                   <p className="text-lg font-bold text-navy">{label}</p>
                   <p className="text-xs text-gray-500">{sub}</p>
                 </div>
@@ -104,12 +104,12 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="relative">
-              {/* Gold accent border */}
-              <div className="absolute -inset-4 bg-gradient-to-br from-gold/20 to-navy/10 rounded-2xl -rotate-3" />
+              {/* Accent border */}
+              <div className="absolute -inset-4 bg-gradient-to-br from-gray-200/50 to-navy/10 rounded-2xl -rotate-3" />
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/attorney-portrait.png"
-                  alt={`${siteConfig.attorney} - Attorney at Law`}
+                  alt={`${siteConfig.attorney} - Advocate at Law`}
                   width={600}
                   height={700}
                   className="w-full h-auto object-cover"
@@ -120,7 +120,7 @@ export default function Hero() {
               </div>
               {/* Floating badge */}
               <div className="absolute -bottom-4 -left-4 bg-navy text-white px-6 py-3 rounded-xl shadow-xl">
-                <p className="text-gold font-bold text-lg">10+</p>
+                <p className="text-white font-bold text-lg">20+</p>
                 <p className="text-xs text-white/70">Years of Excellence</p>
               </div>
             </div>

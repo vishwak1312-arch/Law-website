@@ -29,7 +29,7 @@ export default function FAQPreview() {
                 >
                   <span className="font-medium text-navy pr-4">{faq.question}</span>
                   <span className="shrink-0 w-8 h-8 rounded-full bg-navy/5 flex items-center justify-center">
-                    {open === i ? <Minus className="w-4 h-4 text-gold" /> : <Plus className="w-4 h-4 text-navy" />}
+                    {open === i ? <Minus className="w-4 h-4 text-navy" /> : <Plus className="w-4 h-4 text-navy" />}
                   </span>
                 </button>
                 <AnimatePresence initial={false}>
@@ -53,7 +53,7 @@ export default function FAQPreview() {
         </div>
 
         <FadeUp delay={0.3} className="text-center mt-8">
-          <Link href="/faq" className="text-gold font-semibold text-sm hover:text-gold-dark transition-colors">
+          <Link href="/faq" className="text-navy font-semibold text-sm hover:text-gray-600 transition-colors">
             View All FAQs →
           </Link>
         </FadeUp>

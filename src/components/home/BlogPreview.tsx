@@ -12,7 +12,7 @@ export default function BlogPreview() {
         <SectionHeading
           label="Legal Insights"
           title="From Our Blog"
-          description="Stay informed with the latest legal news, guides, and insights from our attorneys."
+          description="Stay informed with the latest legal news, guides, and insights from our advocates."
         />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -35,11 +35,11 @@ export default function BlogPreview() {
                       <span>{post.date}</span>
                       <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{post.readTime}</span>
                     </div>
-                    <h3 className="font-heading text-lg font-semibold text-navy mb-2 group-hover:text-gold transition-colors line-clamp-2">
+                    <h3 className="font-heading text-lg font-semibold text-navy mb-2 group-hover:text-gray-600 transition-colors line-clamp-2">
                       {post.title}
                     </h3>
                     <p className="text-sm text-gray-500 leading-relaxed mb-4 flex-1 line-clamp-3">{post.excerpt}</p>
-                    <span className="text-gold text-sm font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                    <span className="text-navy text-sm font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                       Read More <ArrowRight className="w-3.5 h-3.5" />
                     </span>
                   </div>

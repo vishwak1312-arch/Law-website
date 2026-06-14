@@ -24,17 +24,17 @@ export default function TrustBuilders() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {achievements.map(({ icon: Icon, title, items }, i) => (
             <FadeUp key={i} delay={i * 0.08}>
-              <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm h-full hover:shadow-lg hover:border-gold/20 transition-all duration-500">
+              <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm h-full hover:shadow-lg hover:border-navy/20 transition-all duration-500">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center">
-                    <Icon className="w-5 h-5 text-gold" />
+                  <div className="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center">
+                    <Icon className="w-5 h-5 text-navy" />
                   </div>
                   <h3 className="font-heading text-lg font-semibold text-navy">{title}</h3>
                 </div>
                 <ul className="space-y-2">
                   {items.map((item, j) => (
                     <li key={j} className="text-sm text-gray-600 flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-gold mt-1.5 shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-navy mt-1.5 shrink-0" />
                       {item}
                     </li>
                   ))}

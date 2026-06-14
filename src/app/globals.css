@@ -2,14 +2,14 @@
 
 
 @theme inline {
-  --color-navy: #0B1F3A;
-  --color-navy-light: #142d52;
-  --color-navy-dark: #071428;
-  --color-gold: #C8A45D;
-  --color-gold-light: #d4b574;
-  --color-gold-dark: #b08e45;
-  --color-dark: #1A1A1A;
-  --color-light: #F5F5F5;
+  --color-navy: #0a0a0a;
+  --color-navy-light: #1a1a1a;
+  --color-navy-dark: #000000;
+  --color-gold: #333333;
+  --color-gold-light: #555555;
+  --color-gold-dark: #1a1a1a;
+  --color-dark: #0a0a0a;
+  --color-light: #f5f5f5;
   --color-gray-100: #f7f7f7;
   --color-gray-200: #e5e5e5;
   --color-gray-300: #d4d4d4;
@@ -17,7 +17,8 @@
   --color-gray-500: #737373;
   --color-gray-600: #525252;
   --color-background: #ffffff;
-  --color-foreground: #1A1A1A;
+  --color-foreground: #0a0a0a;
+  --color-accent: #333333;
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Inter', system-ui, sans-serif;
   --animate-fade-in: fadeIn 0.6s ease-out forwards;
@@ -55,8 +56,8 @@
 }
 
 @keyframes pulseGold {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(200, 164, 93, 0.4); }
-  50% { box-shadow: 0 0 0 12px rgba(200, 164, 93, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(255, 255, 255, 0); }
 }
 
 @keyframes float {
@@ -92,11 +93,27 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-gold);
+  background: #333;
 }
 
 /* Selection */
 ::selection {
-  background: var(--color-gold);
+  background: #333;
+  color: white;
+}
+
+/* Slot availability colors */
+.slot-available {
+  background-color: #22c55e;
+  color: white;
+}
+
+.slot-busy {
+  background-color: #ef4444;
+  color: white;
+}
+
+.slot-limited {
+  background-color: #f59e0b;
   color: white;
 }

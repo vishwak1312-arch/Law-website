@@ -33,11 +33,16 @@ export default function Header() {
             <span>🕐 {siteConfig.hours.weekday}</span>
           </div>
           <div className="flex items-center gap-4">
-            <a href={`tel:${siteConfig.phone}`} className="hover:text-gold transition-colors">
+            <a href={`tel:${siteConfig.phone}`} className="hover:text-white transition-colors">
               <Phone className="inline w-3.5 h-3.5 mr-1" />
               {siteConfig.phone}
             </a>
-            <a href={`mailto:${siteConfig.email}`} className="hover:text-gold transition-colors">{siteConfig.email}</a>
+            <span className="text-white/40">|</span>
+            <a href={`tel:${siteConfig.phone2}`} className="hover:text-white transition-colors">
+              <Phone className="inline w-3.5 h-3.5 mr-1" />
+              {siteConfig.phone2}
+            </a>
+            <a href={`mailto:${siteConfig.email}`} className="hover:text-white transition-colors">{siteConfig.email}</a>
           </div>
         </div>
       </div>
@@ -53,15 +58,15 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className={`p-2 rounded-lg transition-colors ${scrolled ? 'bg-gold/20' : 'bg-navy/10'}`}>
-              <Scale className={`w-6 h-6 ${scrolled ? 'text-gold' : 'text-navy'}`} />
+            <div className={`p-2 rounded-lg transition-colors ${scrolled ? 'bg-white/10' : 'bg-navy/10'}`}>
+              <Scale className={`w-6 h-6 ${scrolled ? 'text-white' : 'text-navy'}`} />
             </div>
             <div>
               <span className={`font-heading text-xl font-bold tracking-tight block leading-tight ${scrolled ? 'text-white' : 'text-navy'}`}>
-                Vamshi
+                DSP Law
               </span>
-              <span className={`text-[10px] uppercase tracking-[0.25em] ${scrolled ? 'text-gold' : 'text-gold-dark'}`}>
-                Associations
+              <span className={`text-[10px] uppercase tracking-[0.25em] ${scrolled ? 'text-white/70' : 'text-gray-500'}`}>
+                Associates
               </span>
             </div>
           </Link>
@@ -72,8 +77,8 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  scrolled ? "text-white/80 hover:text-gold" : "text-dark/70 hover:text-navy"
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white/10 ${
+                  scrolled ? "text-white/80 hover:text-white" : "text-dark/70 hover:text-navy"
                 }`}
               >
                 {link.label}
@@ -81,7 +86,7 @@ export default function Header() {
             ))}
             <button
               onClick={openModal}
-              className="ml-4 px-6 py-2.5 bg-gold text-white text-sm font-semibold rounded-md hover:bg-gold-dark transition-all duration-300 shadow-lg shadow-gold/25 hover:shadow-gold/40 hover:-translate-y-0.5 cursor-pointer"
+              className="ml-4 px-6 py-2.5 bg-navy text-white text-sm font-semibold rounded-md hover:bg-navy-light transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 cursor-pointer border border-white/10"
             >
               Book Consultation
             </button>
@@ -119,8 +124,8 @@ export default function Header() {
               <div className="p-6">
                 <div className="flex items-center justify-between mb-10">
                   <div>
-                    <span className="font-heading text-xl font-bold text-white block">Vamshi</span>
-                    <span className="text-gold text-[10px] uppercase tracking-[0.25em]">Associations</span>
+                    <span className="font-heading text-xl font-bold text-white block">DSP Law</span>
+                    <span className="text-white/50 text-[10px] uppercase tracking-[0.25em]">Associates</span>
                   </div>
                   <button onClick={() => setMobileOpen(false)} className="text-white/60 hover:text-white p-2">
                     <X className="w-6 h-6" />
@@ -132,7 +137,7 @@ export default function Header() {
                       key={link.href}
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
-                      className="block px-4 py-3 text-white/80 hover:text-gold hover:bg-white/5 rounded-lg transition-all text-base"
+                      className="block px-4 py-3 text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-all text-base"
                     >
                       {link.label}
                     </Link>
@@ -141,21 +146,29 @@ export default function Header() {
                 <div className="mt-8 space-y-3">
                   <button
                     onClick={() => { setMobileOpen(false); openModal(); }}
-                    className="block w-full text-center px-6 py-3 bg-gold text-white font-semibold rounded-lg hover:bg-gold-dark transition-colors cursor-pointer"
+                    className="block w-full text-center px-6 py-3 bg-white text-navy font-semibold rounded-lg hover:bg-gray-100 transition-colors cursor-pointer"
                   >
                     Book Consultation
                   </button>
                   <a
                     href={`tel:${siteConfig.phone}`}
-                    className="block w-full text-center px-6 py-3 border border-gold/40 text-gold font-semibold rounded-lg hover:bg-gold/10 transition-colors"
+                    className="block w-full text-center px-6 py-3 border border-white/20 text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
                   >
                     <Phone className="inline w-4 h-4 mr-2" />
-                    Call Now
+                    {siteConfig.phone}
+                  </a>
+                  <a
+                    href={`tel:${siteConfig.phone2}`}
+                    className="block w-full text-center px-6 py-3 border border-white/20 text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
+                  >
+                    <Phone className="inline w-4 h-4 mr-2" />
+                    {siteConfig.phone2}
                   </a>
                 </div>
                 <div className="mt-10 pt-6 border-t border-white/10 text-white/50 text-sm space-y-2">
                   <p>📍 {siteConfig.address}</p>
                   <p>🕐 {siteConfig.hours.weekday}</p>
+                  <p>💻 {siteConfig.hours.saturday}</p>
                 </div>
               </div>
             </motion.div>

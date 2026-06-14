@@ -98,7 +98,7 @@ export default function ExitIntentPopup() {
           >
             <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 relative overflow-hidden">
               {/* Gold accent */}
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-gold via-gold-light to-gold" />
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-navy via-gray-600 to-navy" />
 
               <button
                 onClick={dismiss}
@@ -111,11 +111,11 @@ export default function ExitIntentPopup() {
               {!submitted ? (
                 <>
                   <div className="text-center mb-6">
-                    <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Gift className="w-8 h-8 text-gold" />
+                    <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Gift className="w-8 h-8 text-navy" />
                     </div>
                     <h3 className="font-heading text-2xl font-bold text-navy mb-2">Wait — Don&apos;t Leave Yet!</h3>
-                    <p className="text-gray-600">Get a <span className="text-gold font-semibold">FREE 15-Minute Consultation</span> with our experienced attorney.</p>
+                    <p className="text-gray-600">Get a <span className="text-navy font-semibold">FREE 15-Minute Consultation</span> with our experienced advocate.</p>
                   </div>
 
                   {error && (
@@ -132,7 +132,7 @@ export default function ExitIntentPopup() {
                       required
                       value={form.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gold/50 focus:border-gold outline-none transition-all text-sm"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-navy/50 focus:border-navy outline-none transition-all text-sm"
                     />
                     <input
                       type="email"
@@ -141,7 +141,7 @@ export default function ExitIntentPopup() {
                       required
                       value={form.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gold/50 focus:border-gold outline-none transition-all text-sm"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-navy/50 focus:border-navy outline-none transition-all text-sm"
                     />
                     <input
                       type="tel"
@@ -150,12 +150,12 @@ export default function ExitIntentPopup() {
                       required
                       value={form.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gold/50 focus:border-gold outline-none transition-all text-sm"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-navy/50 focus:border-navy outline-none transition-all text-sm"
                     />
                     <button
                       type="submit"
                       disabled={loading}
-                      className="w-full py-3.5 bg-gold text-white font-semibold rounded-lg hover:bg-gold-dark transition-colors shadow-lg shadow-gold/25 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                      className="w-full py-3.5 bg-navy text-white font-semibold rounded-lg hover:bg-navy-light transition-colors shadow-lg shadow-navy/25 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                     >
                       {loading ? <><Loader2 className="w-4 h-4 animate-spin" /> Sending...</> : "Claim Free Consultation"}
                     </button>

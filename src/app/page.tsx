@@ -9,6 +9,7 @@ import BlogPreview from "@/components/home/BlogPreview";
 import FAQPreview from "@/components/home/FAQPreview";
 import VideoSection from "@/components/home/VideoSection";
 import TrustBuilders from "@/components/home/TrustBuilders";
+import SubscriptionPlans from "@/components/home/SubscriptionPlans";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
       <AboutPreview />
       <PracticeAreasGrid />
       <WhyChooseUs />
+      <SubscriptionPlans />
       <CaseResultsStats />
       <TestimonialsCarousel />
       <BookConsultationCTA />

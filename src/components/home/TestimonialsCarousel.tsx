@@ -24,7 +24,7 @@ export default function TestimonialsCarousel() {
         <FadeUp className="max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 relative overflow-hidden">
             {/* Quote icon */}
-            <Quote className="absolute top-6 right-6 w-16 h-16 text-gold/10" />
+            <Quote className="absolute top-6 right-6 w-16 h-16 text-navy/10" />
 
             <AnimatePresence mode="wait">
               <motion.div
@@ -37,7 +37,7 @@ export default function TestimonialsCarousel() {
                 {/* Stars */}
                 <div className="flex gap-1 mb-6">
                   {Array.from({ length: t.rating }).map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-gold text-gold" />
+                    <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                   ))}
                 </div>
 
@@ -51,7 +51,7 @@ export default function TestimonialsCarousel() {
                     alt={t.name}
                     width={56}
                     height={56}
-                    className="w-14 h-14 rounded-full object-cover border-2 border-gold/30"
+                    className="w-14 h-14 rounded-full object-cover border-2 border-navy/30"
                   />
                   <div>
                     <p className="font-heading font-semibold text-navy">{t.name}</p>
@@ -68,7 +68,7 @@ export default function TestimonialsCarousel() {
                   <button
                     key={i}
                     onClick={() => setIdx(i)}
-                    className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${i === idx ? "bg-gold w-8" : "bg-gray-200 hover:bg-gray-300"}`}
+                    className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${i === idx ? "bg-navy w-8" : "bg-gray-200 hover:bg-gray-300"}`}
                     aria-label={`Testimonial ${i + 1}`}
                   />
                 ))}

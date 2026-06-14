@@ -77,8 +77,8 @@ Thank you.`
       title: "Schedule Consultation",
       description: "Select a date & time that works for you. Automatic email confirmation & calendar invite.",
       action: handleCalendly,
-      accent: "bg-blue-500",
-      accentLight: "bg-blue-50 text-blue-600",
+      accent: "bg-navy",
+      accentLight: "bg-gray-100 text-navy",
     },
     {
       icon: MessageCircle,
@@ -93,16 +93,16 @@ Thank you.`
       title: "Email Consultation",
       description: "Send a detailed email with your legal matter for our team to review.",
       action: handleEmail,
-      accent: "bg-gold",
-      accentLight: "bg-amber-50 text-amber-700",
+      accent: "bg-navy",
+      accentLight: "bg-gray-50 text-gray-700",
     },
     {
       icon: Phone,
-      title: "Call Attorney",
-      description: "Speak directly with our office. One-click calling, mobile optimized.",
+      title: "Call Advocate",
+      description: `Speak directly — ${siteConfig.phone} or ${siteConfig.phone2}`,
       action: handleCall,
       accent: "bg-navy",
-      accentLight: "bg-slate-50 text-navy",
+      accentLight: "bg-gray-100 text-navy",
     },
   ];
 
@@ -128,8 +128,8 @@ Thank you.`
             className="fixed inset-0 z-[71] flex items-center justify-center p-4"
           >
             <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full relative overflow-hidden">
-              {/* Gold accent bar */}
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-gold via-gold-light to-gold" />
+              {/* Accent bar */}
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-navy via-gray-600 to-navy" />
 
               {/* Close button */}
               <button
@@ -146,7 +146,7 @@ Thank you.`
                   Book Your Consultation
                 </h2>
                 <p className="text-gray-500 text-sm">
-                  Choose your preferred method to connect with our attorney
+                  Choose your preferred method to connect with our advocate
                 </p>
               </div>
 
@@ -159,7 +159,7 @@ Thank you.`
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.08 }}
                     onClick={action}
-                    className="w-full flex items-start gap-4 p-4 rounded-xl border border-gray-100 hover:border-gold/30 hover:shadow-md hover:shadow-gold/5 transition-all duration-300 text-left group"
+                    className="w-full flex items-start gap-4 p-4 rounded-xl border border-gray-100 hover:border-navy/30 hover:shadow-md hover:shadow-navy/5 transition-all duration-300 text-left group"
                   >
                     <div
                       className={`w-11 h-11 rounded-lg ${accentLight} flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300`}
@@ -167,7 +167,7 @@ Thank you.`
                       <Icon className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-navy text-sm group-hover:text-gold transition-colors">
+                      <h3 className="font-semibold text-navy text-sm group-hover:text-gray-600 transition-colors">
                         {title}
                       </h3>
                       <p className="text-xs text-gray-400 mt-0.5 leading-relaxed">

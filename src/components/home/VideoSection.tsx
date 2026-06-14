@@ -11,15 +11,15 @@ export default function VideoSection() {
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeading
           label="Introduction"
-          title="Meet Your Attorney"
-          description="Watch a brief introduction from Attorney Vamshi about our firm's approach to legal representation."
+          title="Meet Your Advocate"
+          description="Watch a brief introduction from Advocate Vamshi Krishnaa about our firm's approach to legal representation."
         />
 
         <FadeUp className="max-w-4xl mx-auto">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video bg-navy">
             {!playing ? (
               <div className="absolute inset-0 flex items-center justify-center bg-navy/80 cursor-pointer group" onClick={() => setPlaying(true)}>
-                <div className="w-20 h-20 rounded-full bg-gold flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 rounded-full bg-navy flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
                   <Play className="w-8 h-8 text-white ml-1" />
                 </div>
                 <div className="absolute bottom-6 left-6 text-white">
@@ -30,7 +30,7 @@ export default function VideoSection() {
             ) : (
               <iframe
                 src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
-                title="Meet Your Attorney"
+                title="Meet Your Advocate"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="absolute inset-0 w-full h-full"

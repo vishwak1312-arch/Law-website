@@ -18,10 +18,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-gold/20 rounded-lg"><Scale className="w-6 h-6 text-gold" /></div>
+              <div className="p-2 bg-white/10 rounded-lg"><Scale className="w-6 h-6 text-white" /></div>
               <div>
-                <span className="font-heading text-xl font-bold text-white block leading-tight">Vamshi</span>
-                <span className="text-gold text-[10px] uppercase tracking-[0.25em]">Associations</span>
+                <span className="font-heading text-xl font-bold text-white block leading-tight">DSP Law</span>
+                <span className="text-white/50 text-[10px] uppercase tracking-[0.25em]">Associates</span>
               </div>
             </Link>
             <p className="text-sm leading-relaxed mb-6">
@@ -29,7 +29,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               {socialLinks.map(({ label, href, path }, i) => (
-                <a key={i} href={href} className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-white transition-all duration-300" aria-label={label}>
+                <a key={i} href={href} className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-white hover:text-navy transition-all duration-300" aria-label={label}>
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d={path} /></svg>
                 </a>
               ))}
@@ -42,7 +42,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm hover:text-gold transition-colors hover:pl-1 duration-300 block">{link.label}</Link>
+                  <Link href={link.href} className="text-sm hover:text-white transition-colors hover:pl-1 duration-300 block">{link.label}</Link>
                 </li>
               ))}
             </ul>
@@ -54,7 +54,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {practiceAreas.slice(0, 6).map((area) => (
                 <li key={area.slug}>
-                  <Link href={`/practice-areas/${area.slug}`} className="text-sm hover:text-gold transition-colors hover:pl-1 duration-300 block">{area.title}</Link>
+                  <Link href={`/practice-areas/${area.slug}`} className="text-sm hover:text-white transition-colors hover:pl-1 duration-300 block">{area.title}</Link>
                 </li>
               ))}
             </ul>
@@ -64,9 +64,15 @@ export default function Footer() {
           <div>
             <h3 className="font-heading text-lg font-semibold text-white mb-6">Contact Us</h3>
             <ul className="space-y-4 text-sm">
-              <li className="flex gap-3"><MapPin className="w-4 h-4 text-gold mt-0.5 shrink-0" />{siteConfig.address}</li>
-              <li className="flex gap-3"><Phone className="w-4 h-4 text-gold mt-0.5 shrink-0" /><a href={`tel:${siteConfig.phone}`} className="hover:text-gold transition-colors">{siteConfig.phone}</a></li>
-              <li className="flex gap-3"><Mail className="w-4 h-4 text-gold mt-0.5 shrink-0" /><a href={`mailto:${siteConfig.email}`} className="hover:text-gold transition-colors">{siteConfig.email}</a></li>
+              <li className="flex gap-3"><MapPin className="w-4 h-4 text-white/60 mt-0.5 shrink-0" />{siteConfig.address}</li>
+              <li className="flex gap-3">
+                <Phone className="w-4 h-4 text-white/60 mt-0.5 shrink-0" />
+                <div>
+                  <a href={`tel:${siteConfig.phone}`} className="hover:text-white transition-colors block">{siteConfig.phone}</a>
+                  <a href={`tel:${siteConfig.phone2}`} className="hover:text-white transition-colors block">{siteConfig.phone2}</a>
+                </div>
+              </li>
+              <li className="flex gap-3"><Mail className="w-4 h-4 text-white/60 mt-0.5 shrink-0" /><a href={`mailto:${siteConfig.email}`} className="hover:text-white transition-colors break-all">{siteConfig.email}</a></li>
             </ul>
             <div className="mt-6 text-sm space-y-1">
               <p>{siteConfig.hours.weekday}</p>
@@ -81,11 +87,11 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40">
-            <p>© {new Date().getFullYear()} Vamshi Associations. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} DSP Law Associates. All rights reserved.</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/privacy-policy" className="hover:text-gold transition-colors">Privacy Policy</Link>
-              <Link href="/terms-of-service" className="hover:text-gold transition-colors">Terms of Service</Link>
-              <Link href="/attorney-disclaimer" className="hover:text-gold transition-colors">Attorney Disclaimer</Link>
+              <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+              <Link href="/attorney-disclaimer" className="hover:text-white transition-colors">Attorney Disclaimer</Link>
             </div>
           </div>
           <p className="text-center text-[10px] text-white/25 mt-4">
