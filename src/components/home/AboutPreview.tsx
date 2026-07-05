@@ -21,7 +21,7 @@ export default function AboutPreview() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-navy/5 to-gray-200/30 rounded-2xl rotate-2" />
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/law-office.png" alt="DSP Law Associates Office" width={600} height={500} className="w-full h-auto object-cover" />
+                <Image src="/attorney-casual.jpg" alt="V. Vamshi Krishnaa - DSP Law Associates" width={600} height={700} className="w-full h-auto object-cover" />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-navy text-white px-8 py-4 rounded-xl shadow-xl">
                 <p className="font-heading text-2xl font-bold">500+</p>

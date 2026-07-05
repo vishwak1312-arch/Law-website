@@ -50,7 +50,7 @@ const jsonLd = {
       telephone: siteConfig.phone,
       email: siteConfig.email,
       address: { "@type": "PostalAddress", addressLocality: "Hyderabad", addressRegion: "Telangana", postalCode: "500056", addressCountry: "IN" },
-      image: `${siteConfig.url}/attorney-portrait.png`,
+      image: `${siteConfig.url}/attorney-portrait.jpg`,
       priceRange: "$$",
       openingHours: ["Mo-Fr 16:00-20:00"],
     },

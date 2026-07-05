@@ -61,11 +61,11 @@ export const practiceAreas = [
 ];
 
 export const testimonials = [
-  { name: "Sarah Thompson", role: "Business Owner", photo: "/attorney-portrait.png", rating: 5, review: "DSP Law Associates provided exceptional legal counsel during our corporate restructuring. Their attention to detail and strategic thinking saved our company millions. I cannot recommend them highly enough." },
-  { name: "Michael Rodriguez", role: "Real Estate Developer", photo: "/attorney-portrait.png", rating: 5, review: "Outstanding representation in a complex property dispute. Advocate Vamshi Krishnaa's thorough preparation and courtroom presence led to a favorable settlement. The team is professional and responsive." },
-  { name: "Emily Chen", role: "Tech Entrepreneur", photo: "/attorney-portrait.png", rating: 5, review: "DSP Law Associates handled our intellectual property portfolio with incredible expertise. They secured multiple trademarks and patents efficiently. Their knowledge of IP law is unmatched." },
-  { name: "David Williams", role: "Healthcare Executive", photo: "/attorney-portrait.png", rating: 5, review: "During a critical employment dispute, Advocate Vamshi Krishnaa provided calm, strategic guidance that resolved the matter favorably. Communication throughout the process was exemplary." },
-  { name: "Jennifer Martinez", role: "Family Client", photo: "/attorney-portrait.png", rating: 5, review: "Going through my divorce was incredibly difficult, but DSP Law Associates handled everything with compassion and professionalism. They fought for my rights while keeping my children's best interests first." },
+  { name: "Sarah Thompson", role: "Business Owner", photo: "/attorney-casual.jpg", rating: 5, review: "DSP Law Associates provided exceptional legal counsel during our corporate restructuring. Their attention to detail and strategic thinking saved our company millions. I cannot recommend them highly enough." },
+  { name: "Michael Rodriguez", role: "Real Estate Developer", photo: "/attorney-casual.jpg", rating: 5, review: "Outstanding representation in a complex property dispute. Advocate Vamshi Krishnaa's thorough preparation and courtroom presence led to a favorable settlement. The team is professional and responsive." },
+  { name: "Emily Chen", role: "Tech Entrepreneur", photo: "/attorney-casual.jpg", rating: 5, review: "DSP Law Associates handled our intellectual property portfolio with incredible expertise. They secured multiple trademarks and patents efficiently. Their knowledge of IP law is unmatched." },
+  { name: "David Williams", role: "Healthcare Executive", photo: "/attorney-casual.jpg", rating: 5, review: "During a critical employment dispute, Advocate Vamshi Krishnaa provided calm, strategic guidance that resolved the matter favorably. Communication throughout the process was exemplary." },
+  { name: "Jennifer Martinez", role: "Family Client", photo: "/attorney-casual.jpg", rating: 5, review: "Going through my divorce was incredibly difficult, but DSP Law Associates handled everything with compassion and professionalism. They fought for my rights while keeping my children's best interests first." },
 ];
 
 export const blogPosts = [

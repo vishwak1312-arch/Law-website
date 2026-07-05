@@ -31,7 +31,7 @@ export default function AboutPage() {
             <FadeUp>
               <div className="relative sticky top-32">
                 <div className="absolute -inset-4 bg-gradient-to-br from-gray-200/30 to-navy/5 rounded-2xl -rotate-2" />
-                <Image src="/attorney-portrait.png" alt={siteConfig.attorney} width={600} height={700} className="relative rounded-2xl shadow-2xl w-full" />
+                <Image src="/attorney-portrait.jpg" alt={siteConfig.attorney} width={600} height={700} className="relative rounded-2xl shadow-2xl w-full" />
               </div>
             </FadeUp>
 

@@ -70,7 +70,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
           {/* Author */}
           <FadeUp className="mt-12 p-6 bg-light rounded-xl flex items-start gap-4">
-            <Image src="/attorney-portrait.png" alt={siteConfig.attorney} width={64} height={64} className="w-16 h-16 rounded-full object-cover border-2 border-gold/20" />
+            <Image src="/attorney-portrait.jpg" alt={siteConfig.attorney} width={64} height={64} className="w-16 h-16 rounded-full object-cover border-2 border-gold/20" />
             <div>
               <p className="font-heading font-semibold text-navy">{siteConfig.attorney}</p>
               <p className="text-xs text-gold mb-2">Founder & Managing Partner</p>

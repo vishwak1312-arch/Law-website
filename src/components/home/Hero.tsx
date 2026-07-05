@@ -108,7 +108,7 @@ export default function Hero() {
               <div className="absolute -inset-4 bg-gradient-to-br from-gray-200/50 to-navy/10 rounded-2xl -rotate-3" />
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/attorney-portrait.png"
+                  src="/attorney-portrait.jpg"
                   alt={`${siteConfig.attorney} - Advocate at Law`}
                   width={600}
                   height={700}
