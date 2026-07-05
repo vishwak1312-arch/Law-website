@@ -42,7 +42,7 @@ export default function AboutPage() {
 
               <div className="space-y-4 text-gray-600 leading-relaxed mb-8">
                 <p>V. Vamshi Krishnaa is a distinguished advocate and dynamic finance professional with nearly 20 years of progressive experience across finance, law, and business strategy. Holding a Bachelor of Laws (LLB) from Osmania University along with advanced degrees in Psychology and Business Administration, he combines legal acumen with deep business expertise.</p>
-                <p>As the founder of DSP Law Associates, Advocate Vamshi Krishnaa established the firm to provide personalized, high-quality legal representation for individuals and businesses. His approach combines meticulous preparation with aggressive advocacy, drawing on extensive experience in corporate finance, regulatory compliance, and strategic leadership.</p>
+                <p>As the founder of D.S.P Law Associates, Advocate Vamshi Krishnaa established the firm to provide personalized, high-quality legal representation for individuals and businesses. His approach combines meticulous preparation with aggressive advocacy, drawing on extensive experience in corporate finance, regulatory compliance, and strategic leadership.</p>
                 <p>With a career spanning leadership roles at Tata Motors Finance, Axis Bank, Mahindra & Mahindra, and Blue Energy Motors, he brings a unique cross-functional perspective to legal practice—understanding both the legal and commercial dimensions of every matter.</p>
               </div>
 

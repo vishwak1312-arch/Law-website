@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  keywords: ["law firm", "advocate", "legal services", "lawyer", "corporate law", "family law", "criminal defense", "Hyderabad attorney", "DSP Law Associates", "Vamshi Krishnaa"],
+  keywords: ["law firm", "advocate", "legal services", "lawyer", "corporate law", "family law", "criminal defense", "Hyderabad attorney", "D.S.P Law Associates", "Vamshi Krishnaa"],
   openGraph: {
     type: "website",
     locale: "en_IN",

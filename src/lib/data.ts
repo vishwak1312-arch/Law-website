@@ -1,10 +1,10 @@
 // ─── SITE-WIDE DATA & CONSTANTS ───
 
 export const siteConfig = {
-  name: process.env.NEXT_PUBLIC_LAW_FIRM_NAME || "DSP Law Associates",
+  name: process.env.NEXT_PUBLIC_LAW_FIRM_NAME || "D.S.P Law Associates",
   attorney: process.env.NEXT_PUBLIC_ATTORNEY_NAME || "V. Vamshi Krishnaa",
-  title: "Trusted Legal Representation | DSP Law Associates",
-  description: "DSP Law Associates provides premium legal services in corporate law, family law, criminal defense, and more. Schedule your confidential consultation today.",
+  title: "Trusted Legal Representation | D.S.P Law Associates",
+  description: "D.S.P Law Associates provides premium legal services in corporate law, family law, criminal defense, and more. Schedule your confidential consultation today.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://dsplawassociates.com",
   phone: process.env.NEXT_PUBLIC_ATTORNEY_PHONE || "9963121717",
   phone2: "9246568560",
@@ -61,11 +61,15 @@ export const practiceAreas = [
 ];
 
 export const testimonials = [
-  { name: "Sarah Thompson", role: "Business Owner", photo: "/attorney-casual.jpg", rating: 5, review: "DSP Law Associates provided exceptional legal counsel during our corporate restructuring. Their attention to detail and strategic thinking saved our company millions. I cannot recommend them highly enough." },
-  { name: "Michael Rodriguez", role: "Real Estate Developer", photo: "/attorney-casual.jpg", rating: 5, review: "Outstanding representation in a complex property dispute. Advocate Vamshi Krishnaa's thorough preparation and courtroom presence led to a favorable settlement. The team is professional and responsive." },
-  { name: "Emily Chen", role: "Tech Entrepreneur", photo: "/attorney-casual.jpg", rating: 5, review: "DSP Law Associates handled our intellectual property portfolio with incredible expertise. They secured multiple trademarks and patents efficiently. Their knowledge of IP law is unmatched." },
-  { name: "David Williams", role: "Healthcare Executive", photo: "/attorney-casual.jpg", rating: 5, review: "During a critical employment dispute, Advocate Vamshi Krishnaa provided calm, strategic guidance that resolved the matter favorably. Communication throughout the process was exemplary." },
-  { name: "Jennifer Martinez", role: "Family Client", photo: "/attorney-casual.jpg", rating: 5, review: "Going through my divorce was incredibly difficult, but DSP Law Associates handled everything with compassion and professionalism. They fought for my rights while keeping my children's best interests first." },
+  { name: "Bharath Nandan", role: "Client", rating: 5, review: "Thank you so much for prioritizing my request and helping out with verification of link documents and drafting the agreements covering all the legal terms required." },
+  { name: "Anvesh Reddy", role: "Client", rating: 5, review: "Initially I was hesitant on how they would handle our civil case. I've approached others before coming here. However Vamshi Krishna understood the case in depth and won it in our favour in decent time and budget. 100% for counselling." },
+  { name: "Srikanth Ikkurthy", role: "Client", rating: 5, review: "Team is very friendly and they will understand our concern and guide us in right direction. They own our case and put best efforts for winning the case. I strongly recommend this team." },
+  { name: "Ryali Nagalakshmi", role: "Client", rating: 5, review: "A very good firm who is dedicated, passionate, trustworthy and meant for justification to the needy. 🙏🙏" },
+  { name: "Karthik Gunda", role: "Client", rating: 5, review: "Highly Professional and Responsive, explains in detail and gets the work done." },
+  { name: "A.T. Devakilakshmi Reddy", role: "Client", rating: 5, review: "Very informative and keep going, good luck! 👍" },
+  { name: "Ram Prasad Teegala", role: "Client", rating: 5, review: "Excellent legal services. Very satisfied with the professional approach and dedication of the team." },
+  { name: "Depika M", role: "Client", rating: 5, review: "Great experience with D.S.P Law Associates. Professional and reliable legal representation." },
+  { name: "Vasavi Vase", role: "Client", rating: 5, review: "Highly recommend D.S.P Law Associates for their dedication and expertise in handling legal matters." },
 ];
 
 export const blogPosts = [

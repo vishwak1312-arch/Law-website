@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { FadeUp, SectionHeading } from "@/components/Motion";
 import { Star, Quote } from "lucide-react";
-import { testimonials } from "@/lib/data";
+import { testimonials, siteConfig } from "@/lib/data";
 import BookConsultationCTA from "@/components/home/BookConsultationCTA";
 
-export const metadata: Metadata = { title: "Testimonials", description: "Read what our clients say about their experience with Vamshi Associations." };
+const avatarColors = [
+  "bg-navy", "bg-emerald-600", "bg-violet-600", "bg-amber-600",
+  "bg-rose-600", "bg-sky-600", "bg-teal-600", "bg-indigo-600", "bg-orange-600",
+];
+
+export const metadata: Metadata = { title: "Testimonials", description: `Read what our clients say about their experience with ${siteConfig.name}. Rated 4.9★ from 27 reviews on Google.` };
 
 export default function TestimonialsPage() {
   return (
@@ -14,9 +18,9 @@ export default function TestimonialsPage() {
         <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at 2px 2px, #C8A45D 1px, transparent 0)", backgroundSize: "40px 40px" }} />
         <div className="max-w-7xl mx-auto px-6 text-center relative">
           <FadeUp>
-            <span className="inline-block px-4 py-1.5 bg-gold/10 text-gold text-xs font-semibold uppercase tracking-[0.2em] rounded-full mb-4">Client Reviews</span>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">Testimonials</h1>
-            <p className="text-white/60 text-lg max-w-2xl mx-auto">Hear directly from our clients about their experience.</p>
+            <span className="inline-block px-4 py-1.5 bg-gold/10 text-gold text-xs font-semibold uppercase tracking-[0.2em] rounded-full mb-4">Google Reviews</span>
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">Client Testimonials</h1>
+            <p className="text-white/60 text-lg max-w-2xl mx-auto">Rated <span className="text-gold font-semibold">4.9★</span> from 27 reviews on Google. Hear directly from our clients.</p>
           </FadeUp>
         </div>
       </section>
@@ -35,7 +39,9 @@ export default function TestimonialsPage() {
                   </div>
                   <p className="text-gray-600 text-sm leading-relaxed mb-6 italic">&ldquo;{t.review}&rdquo;</p>
                   <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
-                    <Image src={t.photo} alt={t.name} width={48} height={48} className="w-12 h-12 rounded-full object-cover border-2 border-gold/20" />
+                    <div className={`w-12 h-12 rounded-full ${avatarColors[i % avatarColors.length]} flex items-center justify-center text-white font-bold text-lg shadow-md`}>
+                      {t.name.charAt(0).toUpperCase()}
+                    </div>
                     <div>
                       <p className="font-heading font-semibold text-navy text-sm">{t.name}</p>
                       <p className="text-xs text-gray-400">{t.role}</p>

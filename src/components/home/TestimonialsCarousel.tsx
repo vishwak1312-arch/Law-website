@@ -1,10 +1,14 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { SectionHeading, FadeUp } from "@/components/Motion";
 import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { testimonials } from "@/lib/data";
+
+const avatarColors = [
+  "bg-navy", "bg-emerald-600", "bg-violet-600", "bg-amber-600",
+  "bg-rose-600", "bg-sky-600", "bg-teal-600", "bg-indigo-600", "bg-orange-600",
+];
 
 export default function TestimonialsCarousel() {
   const [idx, setIdx] = useState(0);
@@ -16,9 +20,9 @@ export default function TestimonialsCarousel() {
     <section className="py-20 lg:py-28 bg-light">
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeading
-          label="Testimonials"
+          label="Google Reviews"
           title="What Our Clients Say"
-          description="Our clients' success stories are the ultimate testament to our commitment."
+          description="Real reviews from our valued clients — rated 4.9★ from 27 reviews on Google."
         />
 
         <FadeUp className="max-w-4xl mx-auto">
@@ -46,13 +50,9 @@ export default function TestimonialsCarousel() {
                 </p>
 
                 <div className="flex items-center gap-4">
-                  <Image
-                    src={t.photo}
-                    alt={t.name}
-                    width={56}
-                    height={56}
-                    className="w-14 h-14 rounded-full object-cover border-2 border-navy/30"
-                  />
+                  <div className={`w-14 h-14 rounded-full ${avatarColors[idx % avatarColors.length]} flex items-center justify-center text-white font-bold text-xl shadow-md`}>
+                    {t.name.charAt(0).toUpperCase()}
+                  </div>
                   <div>
                     <p className="font-heading font-semibold text-navy">{t.name}</p>
                     <p className="text-sm text-gray-500">{t.role}</p>

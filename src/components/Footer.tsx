@@ -20,7 +20,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-white/10 rounded-lg"><Scale className="w-6 h-6 text-white" /></div>
               <div>
-                <span className="font-heading text-xl font-bold text-white block leading-tight">DSP Law</span>
+                <span className="font-heading text-xl font-bold text-white block leading-tight">D.S.P Law</span>
                 <span className="text-white/50 text-[10px] uppercase tracking-[0.25em]">Associates</span>
               </div>
             </Link>
@@ -87,7 +87,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40">
-            <p>© {new Date().getFullYear()} DSP Law Associates. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} D.S.P Law Associates. All rights reserved.</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
               <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>

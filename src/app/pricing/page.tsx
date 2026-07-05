@@ -7,7 +7,7 @@ import { Shield, CheckCircle, Clock, Users, Headphones, FileText } from "lucide-
 
 export const metadata: Metadata = {
   title: "Pricing & Plans",
-  description: `Explore DSP Law Associates' affordable legal subscription plans. Choose from Basic, Professional, or Elite plans for comprehensive legal protection.`,
+  description: `Explore D.S.P Law Associates' affordable legal subscription plans. Choose from Basic, Professional, or Elite plans for comprehensive legal protection.`,
 };
 
 const guarantees = [

@@ -63,7 +63,7 @@ export default function Header() {
             </div>
             <div>
               <span className={`font-heading text-xl font-bold tracking-tight block leading-tight ${scrolled ? 'text-white' : 'text-navy'}`}>
-                DSP Law
+                D.S.P Law
               </span>
               <span className={`text-[10px] uppercase tracking-[0.25em] ${scrolled ? 'text-white/70' : 'text-gray-500'}`}>
                 Associates
@@ -124,7 +124,7 @@ export default function Header() {
               <div className="p-6">
                 <div className="flex items-center justify-between mb-10">
                   <div>
-                    <span className="font-heading text-xl font-bold text-white block">DSP Law</span>
+                    <span className="font-heading text-xl font-bold text-white block">D.S.P Law</span>
                     <span className="text-white/50 text-[10px] uppercase tracking-[0.25em]">Associates</span>
                   </div>
                   <button onClick={() => setMobileOpen(false)} className="text-white/60 hover:text-white p-2">

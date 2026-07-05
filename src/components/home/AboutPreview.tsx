@@ -21,7 +21,7 @@ export default function AboutPreview() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-navy/5 to-gray-200/30 rounded-2xl rotate-2" />
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/attorney-casual.jpg" alt="V. Vamshi Krishnaa - DSP Law Associates" width={600} height={700} className="w-full h-auto object-cover" />
+                <Image src="/attorney-casual.jpg" alt="V. Vamshi Krishnaa - D.S.P Law Associates" width={600} height={700} className="w-full h-auto object-cover" />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-navy text-white px-8 py-4 rounded-xl shadow-xl">
                 <p className="font-heading text-2xl font-bold">500+</p>
@@ -42,7 +42,7 @@ export default function AboutPreview() {
               V. Vamshi Krishnaa is a seasoned advocate with nearly 20 years of progressive experience in finance, law, and strategic leadership. Holding a Bachelor of Laws (LLB) from Osmania University alongside MBA and M.Sc. degrees, he combines deep legal knowledge with exceptional business acumen.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
-              At DSP Law Associates, we believe every client deserves personalized attention and a clear path forward. Whether you&apos;re facing a complex business transaction, a family crisis, or a criminal charge, we fight to protect what matters most to you.
+              At D.S.P Law Associates, we believe every client deserves personalized attention and a clear path forward. Whether you&apos;re facing a complex business transaction, a family crisis, or a criminal charge, we fight to protect what matters most to you.
             </p>
 
             {/* Credentials */}
