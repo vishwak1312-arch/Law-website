@@ -1,5 +1,6 @@
 import Hero from "@/components/home/Hero";
 import AboutPreview from "@/components/home/AboutPreview";
+import SeniorCounsel from "@/components/home/SeniorCounsel";
 import PracticeAreasGrid from "@/components/home/PracticeAreasGrid";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import CaseResultsStats from "@/components/home/CaseResultsStats";
@@ -16,6 +17,7 @@ export default function HomePage() {
     <>
       <Hero />
       <AboutPreview />
+      <SeniorCounsel />
       <PracticeAreasGrid />
       <WhyChooseUs />
       <SubscriptionPlans />

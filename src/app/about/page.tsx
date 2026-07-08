@@ -18,8 +18,11 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 text-center relative">
           <FadeUp>
             <span className="inline-block px-4 py-1.5 bg-white/10 text-white text-xs font-semibold uppercase tracking-[0.2em] rounded-full mb-4">About Us</span>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">Meet Your Advocate</h1>
-            <p className="text-white/60 text-lg max-w-2xl mx-auto">Dedicated to protecting your rights with strategic legal representation and genuine client care.</p>
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2">Meet Your Advocate</h1>
+            <p className="font-heading text-xl md:text-2xl font-semibold text-white/80 mb-2">V. Vamshi Krishna</p>
+            <p className="text-white/60 text-base mb-1">Founder &amp; Managing Partner</p>
+            <p className="text-white/50 text-base mb-4">D.S.P. Law Associates</p>
+            <p className="text-white/70 text-lg max-w-2xl mx-auto italic">&ldquo;Justice begins with trust, and every successful legal journey begins with the right advocate.&rdquo;</p>
           </FadeUp>
         </div>
       </section>
@@ -37,13 +40,22 @@ export default function AboutPage() {
 
             <FadeUp delay={0.2}>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-2">{siteConfig.attorney}</h2>
-              <p className="text-gray-500 font-semibold mb-2">Founder & Managing Partner — {siteConfig.name}</p>
-              <p className="text-sm text-gray-400 mb-6">Head – Customer Finance | EV & Mobility | Banking & NBFC Ecosystem Leader</p>
+              <p className="text-gray-500 font-semibold mb-6">Founder &amp; Managing Partner — {siteConfig.name}</p>
 
               <div className="space-y-4 text-gray-600 leading-relaxed mb-8">
-                <p>V. Vamshi Krishnaa is a distinguished advocate and dynamic finance professional with nearly 20 years of progressive experience across finance, law, and business strategy. Holding a Bachelor of Laws (LLB) from Osmania University along with advanced degrees in Psychology and Business Administration, he combines legal acumen with deep business expertise.</p>
-                <p>As the founder of D.S.P Law Associates, Advocate Vamshi Krishnaa established the firm to provide personalized, high-quality legal representation for individuals and businesses. His approach combines meticulous preparation with aggressive advocacy, drawing on extensive experience in corporate finance, regulatory compliance, and strategic leadership.</p>
-                <p>With a career spanning leadership roles at Tata Motors Finance, Axis Bank, Mahindra & Mahindra, and Blue Energy Motors, he brings a unique cross-functional perspective to legal practice—understanding both the legal and commercial dimensions of every matter.</p>
+                <p>V. Vamshi Krishna, Founder &amp; Managing Partner of D.S.P. Law Associates, is a distinguished legal professional with nearly 20 years of diverse experience in law, finance, corporate governance, and strategic leadership. His unique multidisciplinary background enables him to provide clients with practical, commercially sound, and legally robust solutions.</p>
+                <p>He holds a Bachelor of Laws (LL.B.) from Osmania University, complemented by an MBA and an M.Sc., reflecting his commitment to continuous learning and professional excellence. His extensive experience across the corporate and legal sectors equips him with a comprehensive understanding of complex legal, commercial, and regulatory matters.</p>
+                <p>At D.S.P. Law Associates, we are committed to delivering exceptional legal services with integrity, professionalism, and unwavering dedication. We recognize that every legal issue is unique, and every client deserves individual attention, strategic guidance, and honest legal advice.</p>
+                <p>Our practice offers comprehensive legal services across civil litigation, criminal law, family and matrimonial disputes, property and real estate matters, corporate and commercial law, banking and finance, consumer disputes, contract drafting, legal documentation, arbitration, mediation, and legal advisory services. Every matter is approached with meticulous preparation, strategic thinking, and a relentless pursuit of justice.</p>
+                <p>We believe that legal representation extends beyond court appearances. It is about understanding our clients&apos; concerns, protecting their rights, minimizing legal risks, and achieving the most effective and practical outcomes. From the initial consultation to the final resolution, we maintain complete transparency, timely communication, and a client-first approach.</p>
+                <p>Our vision is to build a law firm recognized for excellence, ethical practice, and client confidence. We strive to create lasting relationships based on trust, reliability, and measurable results, ensuring that every client feels supported throughout their legal journey.</p>
+                <p>Whether you are an individual seeking justice, a family requiring legal protection, or a business looking for trusted legal counsel, D.S.P. Law Associates stands ready to represent your interests with dedication, discretion, and determination.</p>
+              </div>
+
+              {/* Tagline */}
+              <div className="bg-navy/5 rounded-xl p-6 mb-8 border-l-4 border-navy">
+                <p className="font-heading text-lg font-bold text-navy">Your Rights. Our Responsibility.</p>
+                <p className="font-heading text-lg font-bold text-navy">Your Success. Our Commitment.</p>
               </div>
 
               {/* Education */}
