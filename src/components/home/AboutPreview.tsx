@@ -6,7 +6,7 @@ import { Award, BookOpen, GraduationCap, Scale } from "lucide-react";
 
 const credentials = [
   { icon: Scale, label: "Licensed Advocate (LLB)" },
-  { icon: Award, label: "20+ Years Experience" },
+  { icon: Award, label: "10+ Years Experience" },
   { icon: GraduationCap, label: "MBA & M.Sc. (Psychology)" },
   { icon: BookOpen, label: "Finance & Legal Expert" },
 ];
@@ -45,7 +45,7 @@ export default function AboutPreview() {
               &ldquo;Justice begins with trust, and every successful legal journey begins with the right advocate.&rdquo;
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              V. Vamshi Krishna is a distinguished legal professional with nearly 20 years of diverse experience in law, finance, corporate governance, and strategic leadership. His unique multidisciplinary background enables him to provide clients with practical, commercially sound, and legally robust solutions.
+              V. Vamshi Krishna is a distinguished legal professional with nearly 10 years of diverse experience in law, finance, corporate governance, and strategic leadership. His unique multidisciplinary background enables him to provide clients with practical, commercially sound, and legally robust solutions.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
               At D.S.P. Law Associates, we are committed to delivering exceptional legal services with integrity, professionalism, and unwavering dedication. Every client deserves individual attention, strategic guidance, and honest legal advice.

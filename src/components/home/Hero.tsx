@@ -6,7 +6,7 @@ import { Phone, Calendar, Award, Users, ThumbsUp, BadgeCheck } from "lucide-reac
 import { siteConfig } from "@/lib/data";
 
 const trustBadges = [
-  { icon: Award, label: "20+ Years", sub: "Experience" },
+  { icon: Award, label: "10+ Years", sub: "Experience" },
   { icon: Users, label: "500+", sub: "Cases Handled" },
   { icon: ThumbsUp, label: "98%", sub: "Satisfaction" },
   { icon: BadgeCheck, label: "Licensed", sub: "Advocate" },

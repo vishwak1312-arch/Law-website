@@ -14,7 +14,7 @@ const guarantees = [
   { icon: Shield, title: "100% Confidential", desc: "All consultations are privileged and confidential" },
   { icon: CheckCircle, title: "No Hidden Fees", desc: "Transparent pricing with no surprises" },
   { icon: Clock, title: "Flexible Plans", desc: "Upgrade, downgrade, or cancel anytime" },
-  { icon: Users, title: "Expert Advocates", desc: "20+ years of legal expertise at your service" },
+  { icon: Users, title: "Expert Advocates", desc: "10+ years of legal expertise at your service" },
   { icon: Headphones, title: "Dedicated Support", desc: "Direct access to your legal team" },
   { icon: FileText, title: "Document Delivery", desc: "All legal documents delivered digitally" },
 ];

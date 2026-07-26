@@ -94,7 +94,7 @@ export const faqs = [
 
 export const caseStats = [
   { label: "Cases Won", value: 500, suffix: "+" },
-  { label: "Years Experience", value: 20, suffix: "+" },
+  { label: "Years Experience", value: 10, suffix: "+" },
   { label: "Client Satisfaction", value: 98, suffix: "%" },
   { label: "Awards & Recognitions", value: 25, suffix: "+" },
 ];
@@ -117,7 +117,7 @@ export const advocateProfile = {
 };
 
 export const profileSummaryPoints = [
-  "Extensive Industry Experience: Gained nearly 20 years of progressive experience in the finance sector, with deep expertise in retail finance, customer financing solutions, and channel management.",
+  "Extensive Industry Experience: Gained nearly 10 years of progressive experience in the finance sector, with deep expertise in retail finance, customer financing solutions, and channel management.",
   "Strategic Leadership Role: Currently working as Head – Customer Finance & Insurance at Blue Energy Motors Limited, leading enterprise-wide initiatives to strengthen financing ecosystems for electric mobility and sustainable solutions.",
   "Multi-Vertical Domain Expertise: Demonstrates comprehensive exposure across NBFCs, banking, captive finance, and OEM ecosystems, with hands-on experience in commercial vehicles, construction equipment, tractors, two-wheelers, and passenger vehicles.",
   "Large-Scale Team Leadership: Proven track record of managing and scaling high-performing teams of 30+ professionals, driving productivity, accountability, and sustained performance excellence.",
