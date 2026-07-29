@@ -1,16 +1,17 @@
 import Razorpay from "razorpay";
 
-if (!process.env.RAZORPAY_KEY_SECRET) {
-  throw new Error("RAZORPAY_KEY_SECRET is not set in environment variables");
+export function getRazorpay(): Razorpay {
+  const keyId = process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID;
+  const keySecret = process.env.RAZORPAY_KEY_SECRET;
+
+  if (!keyId || !keySecret) {
+    throw new Error("RAZORPAY_KEY_SECRET or NEXT_PUBLIC_RAZORPAY_KEY_ID is not configured in environment variables.");
+  }
+
+  return new Razorpay({
+    key_id: keyId,
+    key_secret: keySecret,
+  });
 }
 
-if (!process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID) {
-  throw new Error("NEXT_PUBLIC_RAZORPAY_KEY_ID is not set in environment variables");
-}
-
-const razorpay = new Razorpay({
-  key_id: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
-  key_secret: process.env.RAZORPAY_KEY_SECRET,
-});
-
-export default razorpay;
+export default getRazorpay;
