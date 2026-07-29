@@ -124,11 +124,11 @@ export const schemaTypes = [post, author, category, testimonial, practiceArea, f
 // 10. Criminal Defense 101: Your Rights During an Arrest
 // 11. Employment Contracts: What Every Employee Should Know
 // 12. Trademark vs Copyright vs Patent: Key Differences
-// 13. Divorce and Property Division in New York
+// 13. Divorce and Property Division in Telangana
 // 14. Starting a Business: Legal Checklist for Entrepreneurs
 // 15. Understanding Non-Compete Agreements
 // 16. Immigration Green Card Process Explained
 // 17. What to Do After a Workplace Injury
-// 18. Landlord-Tenant Rights in New York
+// 18. Landlord-Tenant Rights in India
 // 19. Estate Planning Essentials: Wills, Trusts, and Power of Attorney
 // 20. Understanding Civil Litigation: From Filing to Trial

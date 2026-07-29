@@ -3,12 +3,12 @@ import { SectionHeading, FadeUp } from "@/components/Motion";
 import { Award, BookOpen, Mic, Newspaper, Medal, Star } from "lucide-react";
 
 const achievements = [
-  { icon: Award, title: "Bar Memberships", items: ["New York State Bar Association", "American Bar Association", "Federal Bar Council"] },
-  { icon: Medal, title: "Awards & Recognition", items: ["Super Lawyers Rising Star 2020–2026", "Best Lawyers Under 40", "Top 100 Trial Lawyers — NTA"] },
-  { icon: Newspaper, title: "Media Mentions", items: ["Featured in The New York Times", "Legal Expert on CNN", "Guest Contributor — Forbes"] },
-  { icon: Mic, title: "Speaking Engagements", items: ["ABA Annual Conference 2025", "NYU Law Symposium 2024", "Legal Tech Summit 2023"] },
-  { icon: BookOpen, title: "Publications", items: ["'Modern Corporate Governance' — HLR", "'Family Law in the Digital Age'", "'IP Protection Strategies'"] },
-  { icon: Star, title: "Certifications", items: ["Board Certified — Civil Trial Law", "Certified Mediator — NY", "Legal Project Management Cert."] },
+  { icon: Award, title: "Bar Memberships", items: ["Bar Council of Telangana", "High Court Advocates Association", "Bar Council of India"] },
+  { icon: Medal, title: "Awards & Recognition", items: ["Legal Excellence Award 2020–2026", "Top Corporate & Civil Advocates", "Distinguished Legal Counsel — India"] },
+  { icon: Newspaper, title: "Media Mentions", items: ["Featured in The Hindu Legal Columns", "Legal Expert on National News", "Guest Contributor — Times of India"] },
+  { icon: Mic, title: "Speaking Engagements", items: ["National Legal Conference 2025", "Osmania University Law Symposium", "Telangana Legal Tech Summit"] },
+  { icon: BookOpen, title: "Publications", items: ["'Modern Corporate Governance in India'", "'Property & Family Law Insights'", "'IP Protection Strategies'"] },
+  { icon: Star, title: "Certifications", items: ["Board Certified — High Court Advocate", "Certified Mediator & Arbitrator", "Corporate Compliance Certification"] },
 ];
 
 export default function TrustBuilders() {

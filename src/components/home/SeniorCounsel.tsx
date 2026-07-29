@@ -128,24 +128,6 @@ export default function SeniorCounsel() {
                   Tribunals, and other judicial forums.
                 </p>
               </div>
-
-              {/* Contact */}
-              <div className="flex flex-wrap gap-4 mb-8">
-                <a
-                  href="tel:+919032866666"
-                  className="inline-flex items-center gap-2 px-5 py-3 bg-navy text-white text-sm font-semibold rounded-lg hover:bg-navy-light transition-all shadow-lg shadow-navy/25 hover:-translate-y-0.5"
-                >
-                  <Phone className="w-4 h-4" />
-                  +91 9032866666
-                </a>
-                <a
-                  href="mailto:ramprasadteegala@gmail.com"
-                  className="inline-flex items-center gap-2 px-5 py-3 border-2 border-navy text-navy text-sm font-semibold rounded-lg hover:bg-navy hover:text-white transition-all"
-                >
-                  <Mail className="w-4 h-4" />
-                  Email
-                </a>
-              </div>
             </div>
           </FadeUp>
         </div>

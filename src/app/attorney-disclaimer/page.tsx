@@ -17,7 +17,7 @@ export default function AttorneyDisclaimer() {
           <h2>No Guarantee of Results</h2>
           <p>Case results depend upon a variety of factors unique to each case. {siteConfig.name} does not guarantee the outcome of any legal matter. Past verdicts and settlements are presented for illustrative purposes only.</p>
           <h2>Jurisdictional Limitations</h2>
-          <p>{siteConfig.attorney} is licensed to practice law in the State of New York and in the federal courts listed on our website. We do not practice in jurisdictions where we are not licensed unless specifically authorized.</p>
+          <p>{siteConfig.attorney} is licensed to practice law before the High Court for the State of Telangana and in courts across India as listed on our website. We do not practice in jurisdictions where we are not licensed unless specifically authorized.</p>
           <h2>Confidentiality</h2>
           <p>Do not send confidential information through this website. Information submitted through the contact form or other means is not protected by attorney-client privilege until an engagement agreement has been signed.</p>
           <h2>External Links</h2>

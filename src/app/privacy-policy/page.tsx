@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
           <p>{siteConfig.name} (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
           <h2>Information We Collect</h2>
           <p>We may collect personal information that you voluntarily provide to us, including:</p>
-          <ul><li>Name, email address, and phone number</li><li>Information about your legal matter</li><li>Payment information (processed securely through Stripe)</li><li>Communication preferences</li></ul>
+          <ul><li>Name, email address, and phone number</li><li>Information about your legal matter</li><li>Payment information (processed securely through Razorpay)</li><li>Communication preferences</li></ul>
           <h2>How We Use Your Information</h2>
           <p>We use the information we collect to:</p>
           <ul><li>Respond to your inquiries and provide legal services</li><li>Process payments and schedule appointments</li><li>Send relevant legal updates and communications</li><li>Improve our website and services</li><li>Comply with legal obligations</li></ul>
@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
           <h2>Cookies</h2>
           <p>Our website uses cookies and similar tracking technologies to enhance your browsing experience and analyze website traffic. You may adjust your browser settings to refuse cookies.</p>
           <h2>Third-Party Services</h2>
-          <p>We may use third-party services such as Google Analytics, Calendly, and Stripe that have their own privacy policies governing the use of your information.</p>
+          <p>We may use third-party services such as Google Analytics, Calendly, and Razorpay that have their own privacy policies governing the use of your information.</p>
           <h2>Your Rights</h2>
           <p>You have the right to access, correct, or delete your personal information. To exercise these rights, please contact us at {siteConfig.email}.</p>
           <h2>Contact Us</h2>

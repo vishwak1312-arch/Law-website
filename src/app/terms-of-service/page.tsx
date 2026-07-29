@@ -19,9 +19,9 @@ export default function TermsOfService() {
           <h2>Limitation of Liability</h2>
           <p>{siteConfig.name} shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use the website.</p>
           <h2>Payments</h2>
-          <p>All payments made through our website are processed securely through Stripe. By making a payment, you agree to Stripe&apos;s terms of service. Refund policies are determined on a case-by-case basis.</p>
+          <p>All payments made through our website are processed securely through Razorpay. By making a payment, you agree to Razorpay&apos;s terms of service. Refund policies are determined on a case-by-case basis.</p>
           <h2>Governing Law</h2>
-          <p>These Terms shall be governed by and construed in accordance with the laws of the State of New York, without regard to its conflict of law provisions.</p>
+          <p>These Terms shall be governed by and construed in accordance with the laws of the State of Telangana, India, without regard to its conflict of law provisions.</p>
           <h2>Contact</h2>
           <p>For questions about these Terms, contact us at {siteConfig.email}.</p>
         </FadeUp>
