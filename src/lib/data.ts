@@ -1,17 +1,16 @@
 // ─── SITE-WIDE DATA & CONSTANTS ───
 
 export const siteConfig = {
-  name: process.env.NEXT_PUBLIC_LAW_FIRM_NAME || "D.S.P Law Associates",
-  attorney: process.env.NEXT_PUBLIC_ATTORNEY_NAME || "V. Vamshi Krishnaa",
+  name: "D.S.P Law Associates",
+  attorney: "V. Vamshi Krishnaa",
   title: "Trusted Legal Representation | D.S.P Law Associates",
   description: "D.S.P Law Associates provides premium legal services in corporate law, family law, criminal defense, and more. Schedule your confidential consultation today.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://dsplawassociates.com",
-  phone: process.env.NEXT_PUBLIC_ATTORNEY_PHONE || "9963121717",
-  phone2: "9246568560",
-  email: process.env.NEXT_PUBLIC_ATTORNEY_EMAIL || "Dsplawassociates@zohomail.in",
+  url: "https://dsplawassociates.com",
+  phone: "9963121717",
+  email: "Dsplawassociates@zohomail.in",
   emergencyPhone: "9963121717",
-  address: process.env.NEXT_PUBLIC_OFFICE_ADDRESS || "Hyderabad, Telangana, India",
-  whatsapp: process.env.NEXT_PUBLIC_ATTORNEY_WHATSAPP || "919963121717",
+  address: "Hyderabad, Telangana, India",
+  whatsapp: "919963121717",
   calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/dsplawassociates/consultation",
   tawkToId: process.env.NEXT_PUBLIC_TAWKTO_ID || "YOUR_TAWKTO_ID",
   googleMapsEmbed: process.env.NEXT_PUBLIC_GOOGLE_MAPS_EMBED_URL || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0!2d78.4867!3d17.3850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sen!2sin!4v1",
@@ -84,7 +83,7 @@ export const blogPosts = [
 export const faqs = [
   { question: "How much does a consultation cost?", answer: "We offer a complimentary 15-minute initial phone consultation to discuss your legal matter. For in-depth consultations, fees vary based on the complexity of your case. Contact our office for specific pricing." },
   { question: "What areas of law do you practice?", answer: "We practice corporate law, family law, criminal defense, property law, employment law, immigration law, intellectual property, and civil litigation. Our diverse practice areas allow us to serve clients with a wide range of legal needs." },
-  { question: "How quickly can I speak to an attorney?", answer: "We strive to respond to all inquiries within 24 hours. For urgent matters, call our office directly at 9963121717 or 9246568560. You can also schedule a consultation through our online booking system." },
+  { question: "How quickly can I speak to an attorney?", answer: "We strive to respond to all inquiries within 24 hours. For urgent matters, call our office directly at 9963121717. You can also schedule a consultation through our online booking system." },
   { question: "Do you offer virtual consultations?", answer: "Yes! We offer online consultations from 10:00 AM to 12:00 PM and 3:00 PM to 8:00 PM. Physical meetings are available on weekdays from 4:00 PM to 8:00 PM." },
   { question: "What geographic areas do you serve?", answer: "Our office is located in Hyderabad, Telangana. We serve clients throughout Telangana and Andhra Pradesh, and can handle matters across India. We also offer virtual consultations for remote clients." },
   { question: "How are your fees structured?", answer: "We offer flexible fee arrangements including hourly rates, flat fees, contingency fees, and retainer agreements depending on the nature of your case. We discuss all fee structures transparently during your initial consultation." },

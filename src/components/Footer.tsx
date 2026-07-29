@@ -67,10 +67,7 @@ export default function Footer() {
               <li className="flex gap-3"><MapPin className="w-4 h-4 text-white/60 mt-0.5 shrink-0" />{siteConfig.address}</li>
               <li className="flex gap-3">
                 <Phone className="w-4 h-4 text-white/60 mt-0.5 shrink-0" />
-                <div>
-                  <a href={`tel:${siteConfig.phone}`} className="hover:text-white transition-colors block">{siteConfig.phone}</a>
-                  <a href={`tel:${siteConfig.phone2}`} className="hover:text-white transition-colors block">{siteConfig.phone2}</a>
-                </div>
+                <a href={`tel:${siteConfig.phone}`} className="hover:text-white transition-colors block">{siteConfig.phone}</a>
               </li>
               <li className="flex gap-3"><Mail className="w-4 h-4 text-white/60 mt-0.5 shrink-0" /><a href={`mailto:${siteConfig.email}`} className="hover:text-white transition-colors break-all">{siteConfig.email}</a></li>
             </ul>

@@ -37,11 +37,6 @@ export default function Header() {
               <Phone className="inline w-3.5 h-3.5 mr-1" />
               {siteConfig.phone}
             </a>
-            <span className="text-white/40">|</span>
-            <a href={`tel:${siteConfig.phone2}`} className="hover:text-white transition-colors">
-              <Phone className="inline w-3.5 h-3.5 mr-1" />
-              {siteConfig.phone2}
-            </a>
             <a href={`mailto:${siteConfig.email}`} className="hover:text-white transition-colors">{siteConfig.email}</a>
           </div>
         </div>
@@ -156,13 +151,6 @@ export default function Header() {
                   >
                     <Phone className="inline w-4 h-4 mr-2" />
                     {siteConfig.phone}
-                  </a>
-                  <a
-                    href={`tel:${siteConfig.phone2}`}
-                    className="block w-full text-center px-6 py-3 border border-white/20 text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
-                  >
-                    <Phone className="inline w-4 h-4 mr-2" />
-                    {siteConfig.phone2}
                   </a>
                 </div>
                 <div className="mt-10 pt-6 border-t border-white/10 text-white/50 text-sm space-y-2">

@@ -160,9 +160,6 @@ export default function BookConsultationPage() {
                     <a href={`tel:${siteConfig.phone}`} className="flex items-center gap-2 px-6 py-3 bg-navy text-white font-semibold rounded-lg hover:bg-navy-light transition-all text-sm w-full justify-center">
                       <Phone className="w-4 h-4" /> {siteConfig.phone}
                     </a>
-                    <a href={`tel:${siteConfig.phone2}`} className="flex items-center gap-2 px-6 py-3 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-all text-sm w-full justify-center">
-                      <Phone className="w-4 h-4" /> {siteConfig.phone2}
-                    </a>
                   </div>
                 </div>
 

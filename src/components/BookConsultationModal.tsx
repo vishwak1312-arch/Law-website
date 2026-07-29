@@ -99,7 +99,7 @@ Thank you.`
     {
       icon: Phone,
       title: "Call Advocate",
-      description: `Speak directly — ${siteConfig.phone} or ${siteConfig.phone2}`,
+      description: `Speak directly — ${siteConfig.phone}`,
       action: handleCall,
       accent: "bg-navy",
       accentLight: "bg-gray-100 text-navy",
