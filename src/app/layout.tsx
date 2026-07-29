@@ -10,6 +10,7 @@ import BookConsultationModal from "@/components/BookConsultationModal";
 import { ConsultationModalProvider } from "@/lib/useConsultationModal";
 import { siteConfig } from "@/lib/data";
 import Script from "next/script";
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -105,6 +106,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ScrollToTop />
           <BookConsultationModal />
         </ConsultationModalProvider>
+        <Analytics />
 
         {/* Calendly Widget JS */}
         <Script
