@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useCallback, useRef } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { SectionHeading, FadeUp } from "@/components/Motion";
@@ -17,7 +17,28 @@ import {
   Clock,
   MessageCircle,
   Sparkles,
+  Loader2,
+  AlertCircle,
 } from "lucide-react";
+
+// Dynamically load Razorpay checkout.js on demand
+let razorpayPromise: Promise<void> | null = null;
+function loadRazorpayScript(): Promise<void> {
+  if (window.Razorpay) return Promise.resolve();
+  if (razorpayPromise) return razorpayPromise;
+  razorpayPromise = new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = "https://checkout.razorpay.com/v1/checkout.js";
+    script.async = true;
+    script.onload = () => resolve();
+    script.onerror = () => {
+      razorpayPromise = null;
+      reject(new Error("Failed to load payment gateway. Please check your internet connection and try again."));
+    };
+    document.body.appendChild(script);
+  });
+  return razorpayPromise;
+}
 
 const plans = [
   {
@@ -100,8 +121,102 @@ const addOns = [
 
 export default function SubscriptionPlans() {
   const [billing, setBilling] = useState<"monthly" | "yearly">("monthly");
+  const [loadingPlan, setLoadingPlan] = useState<string | null>(null);
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const handleSubscribe = useCallback(
+    async (planId: string, planName: string, amount: number) => {
+      setErrorMsg("");
+
+      const amountInPaise = amount * 100;
+      if (amountInPaise < 100) return;
+
+      setLoadingPlan(planId);
+      try {
+        // Step 0: Ensure Razorpay script is loaded
+        await loadRazorpayScript();
+
+        // Step 1: Create order
+        const orderRes = await fetch("/api/create-order", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            amount: amountInPaise,
+            currency: "INR",
+            receipt: `sub_${planId}_${billing}_${Date.now()}`,
+            notes: {
+              plan_name: planName,
+              billing_period: billing,
+            },
+          }),
+        });
+
+        if (!orderRes.ok) {
+          const errData = await orderRes.json();
+          throw new Error(errData.error || "Failed to create order");
+        }
+
+        const orderData = await orderRes.json();
+
+        // Step 2: Open Razorpay modal
+        const options: RazorpayOptions = {
+          key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID!,
+          amount: orderData.amount,
+          currency: orderData.currency,
+          name: "D.S.P Law Associates",
+          description: `${planName} Plan — ${billing === "yearly" ? "Yearly" : "Monthly"}`,
+          order_id: orderData.order_id,
+          handler: async (response: RazorpayResponse) => {
+            // Step 3: Verify payment
+            try {
+              const verifyRes = await fetch("/api/verify-payment", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  razorpay_order_id: response.razorpay_order_id,
+                  razorpay_payment_id: response.razorpay_payment_id,
+                  razorpay_signature: response.razorpay_signature,
+                }),
+              });
+
+              if (!verifyRes.ok) {
+                const errData = await verifyRes.json();
+                throw new Error(errData.error || "Verification failed");
+              }
+
+              window.location.href = "/payment/success";
+            } catch (err: unknown) {
+              const message = err instanceof Error ? err.message : "Payment verification failed";
+              setErrorMsg(message);
+              setLoadingPlan(null);
+            }
+          },
+          theme: { color: "#0a0a0a" },
+          modal: {
+            ondismiss: () => {
+              setLoadingPlan(null);
+            },
+            confirm_close: true,
+          },
+        };
+
+        const rzp = new window.Razorpay(options);
+        rzp.on("payment.failed", (response: { error: RazorpayError }) => {
+          setErrorMsg(response.error.description || "Payment failed. Please try again.");
+          setLoadingPlan(null);
+        });
+        rzp.open();
+      } catch (err: unknown) {
+        const message = err instanceof Error ? err.message : "Something went wrong.";
+        setErrorMsg(message);
+        setLoadingPlan(null);
+      }
+    },
+    [billing]
+  );
 
   return (
+    <>
     <section className="py-20 lg:py-28 bg-light relative overflow-hidden" id="pricing">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-navy/[0.02] rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
@@ -149,10 +264,22 @@ export default function SubscriptionPlans() {
           </div>
         </FadeUp>
 
+        {/* Error message */}
+        {errorMsg && (
+          <FadeUp>
+            <div className="flex items-center gap-3 p-4 mb-8 max-w-2xl mx-auto bg-red-50 border border-red-200 rounded-xl">
+              <AlertCircle className="w-5 h-5 text-red-500 shrink-0" />
+              <p className="text-sm text-red-800 flex-1">{errorMsg}</p>
+              <button onClick={() => setErrorMsg("")} className="text-xs text-red-600 hover:underline shrink-0">Dismiss</button>
+            </div>
+          </FadeUp>
+        )}
+
         {/* Plan Cards */}
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-20">
           {plans.map((plan, i) => {
             const Icon = plan.icon;
+            const isLoading = loadingPlan === plan.id;
             const displayPrice = billing === "yearly"
               ? Math.round(plan.price * 12 * 0.8)
               : plan.price;
@@ -221,17 +348,27 @@ export default function SubscriptionPlans() {
                     </div>
 
                     {/* CTA Button */}
-                    <Link
-                      href={plan.ctaLink}
-                      className={`flex items-center justify-center gap-2 w-full py-3.5 rounded-xl font-semibold text-sm transition-all duration-300 ${
+                    <button
+                      onClick={() => handleSubscribe(plan.id, plan.name, displayPrice)}
+                      disabled={isLoading || loadingPlan !== null}
+                      className={`flex items-center justify-center gap-2 w-full py-3.5 rounded-xl font-semibold text-sm transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed ${
                         plan.popular
                           ? "bg-white text-navy hover:bg-gray-100 shadow-lg"
                           : "bg-navy text-white hover:bg-navy-light shadow-md"
                       }`}
                     >
-                      {plan.cta}
-                      <ArrowRight className="w-4 h-4" />
-                    </Link>
+                      {isLoading ? (
+                        <>
+                          <Loader2 className="w-4 h-4 animate-spin" />
+                          Processing...
+                        </>
+                      ) : (
+                        <>
+                          {plan.cta}
+                          <ArrowRight className="w-4 h-4" />
+                        </>
+                      )}
+                    </button>
                   </div>
 
                   {/* Divider */}
@@ -341,5 +478,6 @@ export default function SubscriptionPlans() {
         </FadeUp>
       </div>
     </section>
+    </>
   );
 }

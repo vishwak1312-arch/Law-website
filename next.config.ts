@@ -23,10 +23,16 @@ const nextConfig: NextConfig = {
           {
             key: "Content-Security-Policy",
             value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://checkout.razorpay.com",
+              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+              "font-src 'self' https://fonts.gstatic.com",
+              "img-src 'self' data: blob: https://cdn.sanity.io https://*.razorpay.com",
+              "connect-src 'self' https://*.razorpay.com https://*.supabase.co https://api.razorpay.com",
+              "frame-src https://calendly.com https://www.google.com/recaptcha/ https://www.google.com/maps/ https://maps.google.com https://api.razorpay.com https://checkout.razorpay.com",
               "frame-ancestors 'self'",
               "base-uri 'self'",
               "form-action 'self' https://api.razorpay.com",
-              "frame-src https://calendly.com https://www.google.com/recaptcha/ https://www.google.com/maps/ https://maps.google.com https://api.razorpay.com https://checkout.razorpay.com",
             ].join("; ") + ";",
           },
           {

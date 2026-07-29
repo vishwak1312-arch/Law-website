@@ -1,8 +1,26 @@
 "use client";
 import { useState, useCallback } from "react";
-import Script from "next/script";
 import { FadeUp } from "@/components/Motion";
 import { CreditCard, Shield, Lock, AlertCircle, IndianRupee } from "lucide-react";
+
+// Dynamically load Razorpay checkout.js on demand
+let razorpayPromise: Promise<void> | null = null;
+function loadRazorpayScript(): Promise<void> {
+  if (window.Razorpay) return Promise.resolve();
+  if (razorpayPromise) return razorpayPromise;
+  razorpayPromise = new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = "https://checkout.razorpay.com/v1/checkout.js";
+    script.async = true;
+    script.onload = () => resolve();
+    script.onerror = () => {
+      razorpayPromise = null;
+      reject(new Error("Failed to load payment gateway. Please check your internet connection and try again."));
+    };
+    document.body.appendChild(script);
+  });
+  return razorpayPromise;
+}
 
 const paymentTypes = [
   { id: "consultation", label: "Consultation Fee", amount: 25000 },
@@ -22,7 +40,6 @@ export default function PaymentPage() {
   const [notes, setNotes] = useState("");
   const [status, setStatus] = useState<PaymentStatus>("idle");
   const [errorMsg, setErrorMsg] = useState("");
-  const [razorpayLoaded, setRazorpayLoaded] = useState(false);
 
   // Amount in paise (smallest currency unit)
   const getAmountInPaise = (): number => {
@@ -37,11 +54,6 @@ export default function PaymentPage() {
       e.preventDefault();
       setErrorMsg("");
 
-      if (!razorpayLoaded) {
-        setErrorMsg("Payment gateway is loading. Please wait a moment and try again.");
-        return;
-      }
-
       const amountInPaise = getAmountInPaise();
 
       if (amountInPaise < 100) {
@@ -49,9 +61,12 @@ export default function PaymentPage() {
         return;
       }
 
-      // Step 1: Create order on backend
+      // Step 0: Ensure Razorpay script is loaded
       setStatus("creating");
       try {
+        await loadRazorpayScript();
+
+        // Step 1: Create order on backend
         const orderRes = await fetch("/api/create-order", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -146,7 +161,7 @@ export default function PaymentPage() {
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [razorpayLoaded, type, name, email, phone, customAmount, invoiceNum, notes]
+    [type, name, email, phone, customAmount, invoiceNum, notes]
   );
 
   const isLoading = status === "creating" || status === "processing" || status === "verifying";
@@ -159,13 +174,6 @@ export default function PaymentPage() {
 
   return (
     <>
-      {/* Razorpay Checkout Script */}
-      <Script
-        src="https://checkout.razorpay.com/v1/checkout.js"
-        strategy="lazyOnload"
-        onLoad={() => setRazorpayLoaded(true)}
-      />
-
       <section className="bg-navy py-20 lg:py-28 relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-5 pointer-events-none"
