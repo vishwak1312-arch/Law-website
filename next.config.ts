@@ -25,8 +25,8 @@ const nextConfig: NextConfig = {
             value: [
               "frame-ancestors 'self'",
               "base-uri 'self'",
-              "form-action 'self'",
-              "frame-src https://calendly.com https://www.google.com/recaptcha/ https://www.google.com/maps/ https://maps.google.com",
+              "form-action 'self' https://api.razorpay.com",
+              "frame-src https://calendly.com https://www.google.com/recaptcha/ https://www.google.com/maps/ https://maps.google.com https://api.razorpay.com https://checkout.razorpay.com",
             ].join("; ") + ";",
           },
           {
