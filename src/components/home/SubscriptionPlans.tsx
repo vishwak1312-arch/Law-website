@@ -3,6 +3,7 @@ import { useState, useCallback, useRef } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { SectionHeading, FadeUp } from "@/components/Motion";
+import { siteConfig } from "@/lib/data";
 import {
   CheckCircle,
   Star,
@@ -466,11 +467,11 @@ export default function SubscriptionPlans() {
                   Contact for Custom Plan
                 </Link>
                 <a
-                  href="tel:9963121717"
+                  href={`tel:${siteConfig.phone}`}
                   className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-all text-sm"
                 >
                   <Phone className="w-4 h-4" />
-                  Call: 9963121717
+                  Call: {siteConfig.phone}
                 </a>
               </div>
             </div>

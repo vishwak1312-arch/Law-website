@@ -6,11 +6,11 @@ export const siteConfig = {
   title: "Trusted Legal Representation | D.S.P Law Associates",
   description: "D.S.P Law Associates provides premium legal services in corporate law, family law, criminal defense, and more. Schedule your confidential consultation today.",
   url: "https://dsplawassociates.com",
-  phone: "9963121717",
+  phone: "9866921717",
   email: "Dsplawassociates@zohomail.in",
-  emergencyPhone: "9963121717",
+  emergencyPhone: "9866921717",
   address: "Hyderabad, Telangana, India",
-  whatsapp: "919963121717",
+  whatsapp: "919866921717",
   calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/dsplawassociates/consultation",
   tawkToId: process.env.NEXT_PUBLIC_TAWKTO_ID || "YOUR_TAWKTO_ID",
   googleMapsEmbed: process.env.NEXT_PUBLIC_GOOGLE_MAPS_EMBED_URL || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0!2d78.4867!3d17.3850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sen!2sin!4v1",
@@ -83,7 +83,7 @@ export const blogPosts = [
 export const faqs = [
   { question: "How much does a consultation cost?", answer: "We offer a complimentary 15-minute initial phone consultation to discuss your legal matter. For in-depth consultations, fees vary based on the complexity of your case. Contact our office for specific pricing." },
   { question: "What areas of law do you practice?", answer: "We practice corporate law, family law, criminal defense, property law, employment law, immigration law, intellectual property, and civil litigation. Our diverse practice areas allow us to serve clients with a wide range of legal needs." },
-  { question: "How quickly can I speak to an attorney?", answer: "We strive to respond to all inquiries within 24 hours. For urgent matters, call our office directly at 9963121717. You can also schedule a consultation through our online booking system." },
+  { question: "How quickly can I speak to an attorney?", answer: "We strive to respond to all inquiries within 24 hours. For urgent matters, call our office directly at 9866921717. You can also schedule a consultation through our online booking system." },
   { question: "Do you offer virtual consultations?", answer: "Yes! We offer online consultations from 10:00 AM to 12:00 PM and 3:00 PM to 8:00 PM. Physical meetings are available on weekdays from 4:00 PM to 8:00 PM." },
   { question: "What geographic areas do you serve?", answer: "Our office is located in Hyderabad, Telangana. We serve clients throughout Telangana and Andhra Pradesh, and can handle matters across India. We also offer virtual consultations for remote clients." },
   { question: "How are your fees structured?", answer: "We offer flexible fee arrangements including hourly rates, flat fees, contingency fees, and retainer agreements depending on the nature of your case. We discuss all fee structures transparently during your initial consultation." },
@@ -99,7 +99,7 @@ export const caseStats = [
 ];
 
 export const locations = [
-  { city: "Hyderabad", slug: "hyderabad", address: "Hyderabad, Telangana – 500056", phone: "9963121717", description: "Our main office in Hyderabad serves clients throughout Telangana and Andhra Pradesh." },
+  { city: "Hyderabad", slug: "hyderabad", address: "Hyderabad, Telangana – 500056", phone: "9866921717", description: "Our main office in Hyderabad serves clients throughout Telangana and Andhra Pradesh." },
 ];
 
 // ─── RESUME / PROFILE DATA ───
@@ -109,7 +109,7 @@ export const advocateProfile = {
   headline: "Head – Customer Finance | EV & Mobility | Banking & NBFC Ecosystem Leader",
   summary: "Dynamic finance and sales professional with extensive experience in retail finance and customer finance solutions, targeting to leverage expertise in the auto finance industry, particularly in commercial vehicle and tractor financing, within a Hyderabad-based organization.",
   email: "vjvamsee@gmail.com",
-  phone: "+91-9966022444",
+  phone: "+91-9866921717",
   dateOfBirth: "July 16, 1982",
   languages: ["English", "Hindi", "Telugu"],
   address: "Hyderabad, Telangana – 500056",

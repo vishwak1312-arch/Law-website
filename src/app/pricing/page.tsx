@@ -76,7 +76,7 @@ export default function PricingPage() {
               { q: "Is GST included in the pricing?", a: "No, all prices shown are exclusive of GST (18%). GST will be applied at checkout as per applicable laws." },
               { q: "What payment methods do you accept?", a: "We accept UPI, net banking, credit cards, debit cards, and bank transfers. We also accept payments via our secure online payment portal." },
               { q: "Can I cancel my subscription?", a: "Yes, you can cancel your subscription at any time. Your plan will remain active until the end of your current billing period." },
-              { q: "Do you offer custom plans for businesses?", a: "Absolutely! We offer tailored legal plans for businesses of all sizes. Contact us at 9963121717 to discuss your specific requirements." },
+              { q: "Do you offer custom plans for businesses?", a: "Absolutely! We offer tailored legal plans for businesses of all sizes. Contact us at 9866921717 to discuss your specific requirements." },
               { q: "What happens if I need more consultations than my plan allows?", a: "Additional consultations can be booked at a discounted rate for active subscribers. Elite plan members enjoy unlimited consultations." },
             ].map((faq, i) => (
               <FadeUp key={i} delay={i * 0.05}>
