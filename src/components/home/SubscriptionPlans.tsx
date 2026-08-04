@@ -164,7 +164,7 @@ export default function SubscriptionPlans() {
           key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID!,
           amount: orderData.amount,
           currency: orderData.currency,
-          name: "D.S.P Law Associates",
+          name: "DSP Law Associates",
           description: `${planName} Plan — ${billing === "yearly" ? "Yearly" : "Monthly"}`,
           order_id: orderData.order_id,
           handler: async (response: RazorpayResponse) => {

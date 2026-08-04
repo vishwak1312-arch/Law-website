@@ -1,10 +1,10 @@
 // ─── SITE-WIDE DATA & CONSTANTS ───
 
 export const siteConfig = {
-  name: "D.S.P Law Associates",
+  name: "DSP Law Associates",
   attorney: "V. Vamshi Krishnaa",
-  title: "Trusted Legal Representation | D.S.P Law Associates",
-  description: "D.S.P Law Associates provides premium legal services in corporate law, family law, criminal defense, and more. Schedule your confidential consultation today.",
+  title: "Trusted Legal Representation | DSP Law Associates",
+  description: "DSP Law Associates provides premium legal services in corporate law, family law, criminal defense, and more. Schedule your confidential consultation today.",
   url: "https://dsplawassociates.com",
   phone: "9866921717",
   email: "Dsplawassociates@zohomail.in",
@@ -54,7 +54,6 @@ export const practiceAreas = [
   { slug: "criminal-defense", title: "Criminal Defense", icon: "Shield", description: "Aggressive defense strategies for misdemeanor and felony charges.", details: "When your freedom is at stake, you need an attorney who will fight for you. Our criminal defense practice handles cases ranging from misdemeanors to serious felonies. We provide aggressive, strategic defense while protecting your constitutional rights. From investigation through trial and appeal, we stand by your side." },
   { slug: "property-law", title: "Property Law", icon: "Home", description: "Expert guidance in real estate transactions, disputes, and property rights.", details: "Whether you're buying, selling, leasing, or dealing with property disputes, our real estate attorneys provide comprehensive legal services. We handle residential and commercial transactions, title issues, zoning matters, landlord-tenant disputes, and construction law." },
   { slug: "employment-law", title: "Employment Law", icon: "Briefcase", description: "Protecting employee and employer rights in workplace disputes.", details: "Our employment law practice represents both employers and employees in workplace matters. We handle wrongful termination, discrimination claims, harassment cases, wage disputes, employment contracts, non-compete agreements, and regulatory compliance." },
-  { slug: "immigration-law", title: "Immigration Law", icon: "Globe", description: "Navigating visa applications, green cards, and citizenship processes.", details: "Our immigration attorneys help individuals and families navigate the complex immigration system. We handle visa applications, green card petitions, naturalization, asylum cases, deportation defense, and employer-sponsored immigration programs." },
   { slug: "intellectual-property", title: "Intellectual Property", icon: "Lightbulb", description: "Safeguarding your innovations, trademarks, copyrights, and trade secrets.", details: "Protecting your intellectual property is crucial in today's competitive landscape. Our IP practice handles trademark registration and enforcement, copyright protection, patent applications, trade secret litigation, and licensing agreements." },
   { slug: "civil-litigation", title: "Civil Litigation", icon: "Scale", description: "Resolving complex civil disputes through strategic litigation and negotiation.", details: "When disputes cannot be resolved amicably, our litigation team provides aggressive, strategic representation. We handle breach of contract, business torts, partnership disputes, collections, injunctive relief, and appellate advocacy." },
 ];
@@ -67,8 +66,8 @@ export const testimonials = [
   { name: "Karthik Gunda", role: "Client", rating: 5, review: "Highly Professional and Responsive, explains in detail and gets the work done." },
   { name: "A.T. Devakilakshmi Reddy", role: "Client", rating: 5, review: "Very informative and keep going, good luck! 👍" },
   { name: "Ram Prasad Teegala", role: "Client", rating: 5, review: "Excellent legal services. Very satisfied with the professional approach and dedication of the team." },
-  { name: "Depika M", role: "Client", rating: 5, review: "Great experience with D.S.P Law Associates. Professional and reliable legal representation." },
-  { name: "Vasavi Vase", role: "Client", rating: 5, review: "Highly recommend D.S.P Law Associates for their dedication and expertise in handling legal matters." },
+  { name: "Depika M", role: "Client", rating: 5, review: "Great experience with DSP Law Associates. Professional and reliable legal representation." },
+  { name: "Vasavi Vase", role: "Client", rating: 5, review: "Highly recommend DSP Law Associates for their dedication and expertise in handling legal matters." },
 ];
 
 export const blogPosts = [
@@ -76,13 +75,12 @@ export const blogPosts = [
   { slug: "family-law-custody-guide", title: "A Parent's Guide to Child Custody Proceedings", excerpt: "Navigating child custody can be overwhelming. This comprehensive guide covers the types of custody, factors courts consider, and how to protect your parental rights.", category: "Family Law", date: "2026-05-20", image: "/blog-legal.png", readTime: "8 min read" },
   { slug: "protecting-intellectual-property", title: "5 Essential Steps to Protect Your Intellectual Property", excerpt: "In today's digital economy, protecting your intellectual property is more critical than ever. Discover the five essential steps every business owner should take.", category: "IP Law", date: "2026-05-15", image: "/blog-legal.png", readTime: "6 min read" },
   { slug: "employment-law-rights", title: "Know Your Rights: Employee Protections Under Federal Law", excerpt: "Federal employment laws provide crucial protections for workers. Learn about your rights regarding discrimination, wages, safety, and more.", category: "Employment Law", date: "2026-05-10", image: "/blog-legal.png", readTime: "7 min read" },
-  { slug: "immigration-visa-updates", title: "2026 Immigration Visa Updates: What You Need to Know", excerpt: "Stay informed about the latest changes to immigration policy, visa processing times, and new pathways to permanent residency.", category: "Immigration", date: "2026-05-05", image: "/blog-legal.png", readTime: "6 min read" },
   { slug: "real-estate-closing-checklist", title: "The Ultimate Real Estate Closing Checklist", excerpt: "Don't let anything slip through the cracks. Our comprehensive closing checklist ensures a smooth real estate transaction from contract to keys.", category: "Property Law", date: "2026-04-28", image: "/blog-legal.png", readTime: "5 min read" },
 ];
 
 export const faqs = [
   { question: "How much does a consultation cost?", answer: "We offer a complimentary 15-minute initial phone consultation to discuss your legal matter. For in-depth consultations, fees vary based on the complexity of your case. Contact our office for specific pricing." },
-  { question: "What areas of law do you practice?", answer: "We practice corporate law, family law, criminal defense, property law, employment law, immigration law, intellectual property, and civil litigation. Our diverse practice areas allow us to serve clients with a wide range of legal needs." },
+  { question: "What areas of law do you practice?", answer: "We practice corporate law, family law, criminal defense, property law, employment law, intellectual property, and civil litigation. Our diverse practice areas allow us to serve clients with a wide range of legal needs." },
   { question: "How quickly can I speak to an attorney?", answer: "We strive to respond to all inquiries within 24 hours. For urgent matters, call our office directly at 9866921717. You can also schedule a consultation through our online booking system." },
   { question: "Do you offer virtual consultations?", answer: "Yes! We offer online consultations from 10:00 AM to 12:00 PM and 3:00 PM to 8:00 PM. Physical meetings are available on weekdays from 4:00 PM to 8:00 PM." },
   { question: "What geographic areas do you serve?", answer: "Our office is located in Hyderabad, Telangana. We serve clients throughout Telangana and Andhra Pradesh, and can handle matters across India. We also offer virtual consultations for remote clients." },

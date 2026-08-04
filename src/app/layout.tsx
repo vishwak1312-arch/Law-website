@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  keywords: ["law firm", "advocate", "legal services", "lawyer", "corporate law", "family law", "criminal defense", "Hyderabad attorney", "D.S.P Law Associates", "Vamshi Krishnaa"],
+  keywords: ["law firm", "advocate", "legal services", "lawyer", "corporate law", "family law", "criminal defense", "Hyderabad attorney", "DSP Law Associates", "Vamshi Krishnaa"],
   icons: {
     icon: [
       { url: "/favicon.ico?v=2", sizes: "any" },
@@ -70,7 +70,7 @@ const jsonLd = {
       telephone: siteConfig.phone,
       description: siteConfig.description,
       areaServed: { "@type": "City", name: "Hyderabad" },
-      serviceType: ["Corporate Law", "Family Law", "Criminal Defense", "Property Law", "Employment Law", "Immigration Law", "Intellectual Property", "Civil Litigation"],
+      serviceType: ["Corporate Law", "Family Law", "Criminal Defense", "Property Law", "Employment Law", "Intellectual Property", "Civil Litigation"],
     },
     {
       "@type": "LocalBusiness",

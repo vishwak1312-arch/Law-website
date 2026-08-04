@@ -27,7 +27,7 @@ async function getRecaptchaToken(): Promise<string | null> {
   });
 }
 
-const legalMatters = ["Corporate Law", "Family Law", "Criminal Defense", "Property Law", "Employment Law", "Immigration Law", "Intellectual Property", "Civil Litigation", "Other"];
+const legalMatters = ["Corporate Law", "Family Law", "Criminal Defense", "Property Law", "Employment Law", "Intellectual Property", "Civil Litigation", "Other"];
 const urgencyLevels = ["Low — General inquiry", "Medium — Need guidance soon", "High — Urgent legal matter", "Emergency — Immediate assistance needed"];
 
 interface FormData {

@@ -97,7 +97,7 @@ export default function PaymentPage() {
           key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID!,
           amount: orderData.amount,
           currency: orderData.currency,
-          name: "D.S.P Law Associates",
+          name: "DSP Law Associates",
           description: `${type === "consultation" ? "Consultation Fee" : type === "retainer" ? "Retainer Payment" : "Invoice Payment"}`,
           order_id: orderData.order_id,
           handler: async (response: RazorpayResponse) => {

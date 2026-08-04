@@ -116,7 +116,6 @@ export const schemaTypes = [post, author, category, testimonial, practiceArea, f
 // 2. A Parent's Guide to Child Custody Proceedings
 // 3. 5 Essential Steps to Protect Your Intellectual Property
 // 4. Know Your Rights: Employee Protections Under Federal Law
-// 5. 2026 Immigration Visa Updates: What You Need to Know
 // 6. The Ultimate Real Estate Closing Checklist
 // 7. How to Choose the Right Attorney for Your Case
 // 8. Understanding Prenuptial Agreements: A Complete Guide
@@ -127,7 +126,6 @@ export const schemaTypes = [post, author, category, testimonial, practiceArea, f
 // 13. Divorce and Property Division in Telangana
 // 14. Starting a Business: Legal Checklist for Entrepreneurs
 // 15. Understanding Non-Compete Agreements
-// 16. Immigration Green Card Process Explained
 // 17. What to Do After a Workplace Injury
 // 18. Landlord-Tenant Rights in India
 // 19. Estate Planning Essentials: Wills, Trusts, and Power of Attorney

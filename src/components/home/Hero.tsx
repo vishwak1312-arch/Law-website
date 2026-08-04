@@ -18,10 +18,10 @@ export default function Hero() {
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230a0a0a' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")" }} />
 
-      <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24">
+      <div className="max-w-7xl mx-auto px-6 py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left Content */}
-          <div className="order-2 lg:order-1">
+          {/* Left Column (Desktop & Mobile Title/Paragraph) */}
+          <div>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -57,11 +57,12 @@ export default function Hero() {
               Protecting Your Rights, Business, Family, and Future With Strategic Legal Solutions.
             </motion.p>
 
+            {/* Desktop-only CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 mb-12"
+              className="hidden lg:flex flex-row gap-4 mb-12"
             >
               <Link
                 href="/book-consultation"
@@ -79,12 +80,12 @@ export default function Hero() {
               </a>
             </motion.div>
 
-            {/* Trust Badges */}
+            {/* Desktop-only Trust Badges */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.5 }}
-              className="grid grid-cols-2 sm:grid-cols-4 gap-4"
+              className="hidden lg:grid grid-cols-4 gap-4"
             >
               {trustBadges.map(({ icon: Icon, label, sub }, i) => (
                 <div key={i} className="text-center p-3 rounded-xl bg-white shadow-sm border border-gray-100">
@@ -96,9 +97,9 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Right Image */}
+          {/* Right Column / Mobile Middle: Attorney Photo */}
           <motion.div
-            className="order-1 lg:order-2 relative"
+            className="relative"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -120,12 +121,51 @@ export default function Hero() {
               </div>
               {/* Floating badge */}
               <div className="absolute -bottom-4 -left-4 bg-navy text-white px-6 py-3 rounded-xl shadow-xl">
-                <p className="text-white font-bold text-lg">20+</p>
+                <p className="text-white font-bold text-lg">10+</p>
                 <p className="text-xs text-white/70">Years of Excellence</p>
               </div>
             </div>
           </motion.div>
         </div>
+
+        {/* Mobile-only CTA Buttons (Renders after photo on mobile) */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="flex lg:hidden flex-col sm:flex-row gap-4 mt-8"
+        >
+          <Link
+            href="/book-consultation"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-navy text-white font-semibold rounded-lg hover:bg-navy-light transition-all duration-300 shadow-xl shadow-navy/25 hover:shadow-navy/40 hover:-translate-y-0.5 text-sm"
+          >
+            <Calendar className="w-4 h-4" />
+            Book Consultation
+          </Link>
+          <a
+            href={`tel:${siteConfig.phone}`}
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-all duration-300 text-sm"
+          >
+            <Phone className="w-4 h-4" />
+            Call Now
+          </a>
+        </motion.div>
+
+        {/* Mobile-only Trust Badges (Renders after CTA buttons on mobile) */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.5 }}
+          className="grid lg:hidden grid-cols-2 sm:grid-cols-4 gap-4 mt-6"
+        >
+          {trustBadges.map(({ icon: Icon, label, sub }, i) => (
+            <div key={i} className="text-center p-3 rounded-xl bg-white shadow-sm border border-gray-100">
+              <Icon className="w-5 h-5 text-navy mx-auto mb-1.5" />
+              <p className="text-lg font-bold text-navy">{label}</p>
+              <p className="text-xs text-gray-500">{sub}</p>
+            </div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );

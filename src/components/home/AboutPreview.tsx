@@ -21,7 +21,7 @@ export default function AboutPreview() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-navy/5 to-gray-200/30 rounded-2xl rotate-2" />
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/advocate-meet.jpg" alt="V. Vamshi Krishnaa - D.S.P Law Associates" width={600} height={700} className="w-full h-auto object-cover" />
+                <Image src="/advocate-meet.jpg" alt="V. Vamshi Krishnaa - DSP Law Associates" width={600} height={700} className="w-full h-auto object-cover" />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-navy text-white px-8 py-4 rounded-xl shadow-xl">
                 <p className="font-heading text-2xl font-bold">500+</p>
@@ -40,7 +40,7 @@ export default function AboutPreview() {
             </h2>
             <p className="font-heading text-xl md:text-2xl font-semibold text-navy/80 mb-2">V. Vamshi Krishna</p>
             <p className="text-sm text-gray-500 font-semibold mb-1">Founder &amp; Managing Partner</p>
-            <p className="text-sm text-gray-400 mb-4">D.S.P. Law Associates</p>
+            <p className="text-sm text-gray-400 mb-4">DSP Law Associates</p>
             <p className="text-navy/70 italic leading-relaxed mb-4 border-l-4 border-navy/20 pl-4">
               &ldquo;Justice begins with trust, and every successful legal journey begins with the right advocate.&rdquo;
             </p>
@@ -48,7 +48,7 @@ export default function AboutPreview() {
               V. Vamshi Krishna is a distinguished legal professional with nearly 10 years of diverse experience in law, finance, corporate governance, and strategic leadership. His unique multidisciplinary background enables him to provide clients with practical, commercially sound, and legally robust solutions.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
-              At D.S.P. Law Associates, we are committed to delivering exceptional legal services with integrity, professionalism, and unwavering dedication. Every client deserves individual attention, strategic guidance, and honest legal advice.
+              At DSP Law Associates, we are committed to delivering exceptional legal services with integrity, professionalism, and unwavering dedication. Every client deserves individual attention, strategic guidance, and honest legal advice.
             </p>
 
             {/* Credentials */}

@@ -21,7 +21,7 @@ export default function AboutPage() {
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2">Meet Your Advocate</h1>
             <p className="font-heading text-xl md:text-2xl font-semibold text-white/80 mb-2">V. Vamshi Krishna</p>
             <p className="text-white/60 text-base mb-1">Founder &amp; Managing Partner</p>
-            <p className="text-white/50 text-base mb-4">D.S.P. Law Associates</p>
+            <p className="text-white/50 text-base mb-4">DSP Law Associates</p>
             <p className="text-white/70 text-lg max-w-2xl mx-auto italic">&ldquo;Justice begins with trust, and every successful legal journey begins with the right advocate.&rdquo;</p>
           </FadeUp>
         </div>
@@ -43,13 +43,13 @@ export default function AboutPage() {
               <p className="text-gray-500 font-semibold mb-6">Founder &amp; Managing Partner — {siteConfig.name}</p>
 
               <div className="space-y-4 text-gray-600 leading-relaxed mb-8">
-                <p>V. Vamshi Krishna, Founder &amp; Managing Partner of D.S.P. Law Associates, is a distinguished legal professional with nearly 20 years of diverse experience in law, finance, corporate governance, and strategic leadership. His unique multidisciplinary background enables him to provide clients with practical, commercially sound, and legally robust solutions.</p>
+                <p>V. Vamshi Krishna, Founder &amp; Managing Partner of DSP Law Associates, is a distinguished legal professional with nearly 20 years of diverse experience in law, finance, corporate governance, and strategic leadership. His unique multidisciplinary background enables him to provide clients with practical, commercially sound, and legally robust solutions.</p>
                 <p>He holds a Bachelor of Laws (LL.B.) from Osmania University, complemented by an MBA and an M.Sc., reflecting his commitment to continuous learning and professional excellence. His extensive experience across the corporate and legal sectors equips him with a comprehensive understanding of complex legal, commercial, and regulatory matters.</p>
-                <p>At D.S.P. Law Associates, we are committed to delivering exceptional legal services with integrity, professionalism, and unwavering dedication. We recognize that every legal issue is unique, and every client deserves individual attention, strategic guidance, and honest legal advice.</p>
+                <p>At DSP Law Associates, we are committed to delivering exceptional legal services with integrity, professionalism, and unwavering dedication. We recognize that every legal issue is unique, and every client deserves individual attention, strategic guidance, and honest legal advice.</p>
                 <p>Our practice offers comprehensive legal services across civil litigation, criminal law, family and matrimonial disputes, property and real estate matters, corporate and commercial law, banking and finance, consumer disputes, contract drafting, legal documentation, arbitration, mediation, and legal advisory services. Every matter is approached with meticulous preparation, strategic thinking, and a relentless pursuit of justice.</p>
                 <p>We believe that legal representation extends beyond court appearances. It is about understanding our clients&apos; concerns, protecting their rights, minimizing legal risks, and achieving the most effective and practical outcomes. From the initial consultation to the final resolution, we maintain complete transparency, timely communication, and a client-first approach.</p>
                 <p>Our vision is to build a law firm recognized for excellence, ethical practice, and client confidence. We strive to create lasting relationships based on trust, reliability, and measurable results, ensuring that every client feels supported throughout their legal journey.</p>
-                <p>Whether you are an individual seeking justice, a family requiring legal protection, or a business looking for trusted legal counsel, D.S.P. Law Associates stands ready to represent your interests with dedication, discretion, and determination.</p>
+                <p>Whether you are an individual seeking justice, a family requiring legal protection, or a business looking for trusted legal counsel, DSP Law Associates stands ready to represent your interests with dedication, discretion, and determination.</p>
               </div>
 
               {/* Tagline */}
