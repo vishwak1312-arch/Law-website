@@ -53,10 +53,10 @@ export default async function BlogPostPage({ params }: PageProps) {
           <FadeUp>
             <Image src={post.image} alt={post.title} width={900} height={450} className="w-full rounded-2xl shadow-xl mb-10 object-cover" />
             <article className="prose prose-lg max-w-none text-gray-600">
-              <p className="text-xl leading-relaxed">{post.excerpt}</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <h2>Key Considerations</h2>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p className="text-xl font-medium text-navy leading-relaxed mb-6">{post.excerpt}</p>
+              <p>Navigating complex legal matters requires clear guidance, thorough preparation, and experienced strategic counsel. Whether you are addressing corporate agreements, commercial disputes, family law, or regulatory compliance, taking proactive legal steps is critical to safeguarding your interests and securing the best possible outcome.</p>
+              <h2 className="font-heading text-2xl font-bold text-navy mt-8 mb-4">Key Considerations</h2>
+              <p>Every legal situation presents unique challenges that demand tailored attention. Before making significant decisions, it is essential to evaluate the legal implications and outline your options with a qualified advocate.</p>
               <ul>
                 <li>Understanding your legal rights and obligations</li>
                 <li>Navigating complex regulatory requirements</li>
