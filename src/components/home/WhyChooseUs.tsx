@@ -6,7 +6,7 @@ const features = [
   { icon: UserCheck, title: "Personalized Attention", description: "Every case receives individualized strategy. You'll work directly with your advocate, not a junior associate." },
   { icon: Target, title: "Strategic Legal Solutions", description: "We don't just react — we anticipate. Our proactive approach positions you for the best possible outcome." },
   { icon: MessageSquare, title: "Transparent Communication", description: "You'll never be left in the dark. We provide regular updates and are always available to answer your questions." },
-  { icon: TrendingUp, title: "Proven Results", description: "With over 500 cases successfully resolved and a 98% satisfaction rate, our track record speaks for itself." },
+  { icon: TrendingUp, title: "Proven Results", description: "With over 200 cases successfully resolved and a 98% satisfaction rate, our track record speaks for itself." },
 ];
 
 export default function WhyChooseUs() {

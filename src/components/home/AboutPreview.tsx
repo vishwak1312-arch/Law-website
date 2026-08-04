@@ -24,7 +24,7 @@ export default function AboutPreview() {
                 <Image src="/advocate-meet.jpg" alt="V. Vamshi Krishnaa - DSP Law Associates" width={600} height={700} className="w-full h-auto object-cover" />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-navy text-white px-8 py-4 rounded-xl shadow-xl">
-                <p className="font-heading text-2xl font-bold">500+</p>
+                <p className="font-heading text-2xl font-bold">200+</p>
                 <p className="text-xs text-white/80">Cases Successfully Resolved</p>
               </div>
             </div>

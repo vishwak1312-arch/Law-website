@@ -90,7 +90,7 @@ export const faqs = [
 ];
 
 export const caseStats = [
-  { label: "Cases Won", value: 500, suffix: "+" },
+  { label: "Cases Won", value: 200, suffix: "+" },
   { label: "Years Experience", value: 10, suffix: "+" },
   { label: "Client Satisfaction", value: 98, suffix: "%" },
   { label: "Awards & Recognitions", value: 25, suffix: "+" },

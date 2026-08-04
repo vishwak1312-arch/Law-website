@@ -5,7 +5,7 @@ import CaseResultsStats from "@/components/home/CaseResultsStats";
 import BookConsultationCTA from "@/components/home/BookConsultationCTA";
 import { Trophy, Scale, Users, Star } from "lucide-react";
 
-export const metadata: Metadata = { title: "Case Results", description: "Explore our track record of success with 500+ cases won and a 98% client satisfaction rate." };
+export const metadata: Metadata = { title: "Case Results", description: "Explore our track record of success with 200+ cases won and a 98% client satisfaction rate." };
 
 const caseStudies = [
   { icon: Scale, category: "Corporate Law", title: "Multi-Million Dollar Merger", result: "$12M Settlement", desc: "Successfully negotiated a complex corporate merger involving multiple stakeholders and regulatory approvals." },

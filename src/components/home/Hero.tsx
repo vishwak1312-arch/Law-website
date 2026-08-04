@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/data";
 
 const trustBadges = [
   { icon: Award, label: "10+ Years", sub: "Experience" },
-  { icon: Users, label: "500+", sub: "Cases Handled" },
+  { icon: Users, label: "200+", sub: "Cases Handled" },
   { icon: ThumbsUp, label: "98%", sub: "Satisfaction" },
   { icon: BadgeCheck, label: "Licensed", sub: "Advocate" },
 ];
