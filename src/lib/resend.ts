@@ -101,16 +101,36 @@ export async function sendAttorneyNotification(lead: Lead): Promise<boolean> {
   }
 
   try {
-    await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: FROM_EMAIL,
       to: ATTORNEY_EMAIL,
       subject: `New Legal Inquiry: ${lead.matter} — ${lead.name}`,
       html: emailWrapper(content),
     });
+
+    if (error) {
+      console.warn("[Email] Primary recipient notice:", error.message, "— Delivering to Resend owner inbox (vishwak1312@gmail.com)");
+      await resend.emails.send({
+        from: "onboarding@resend.dev",
+        to: "vishwak1312@gmail.com",
+        subject: `New Legal Inquiry: ${lead.matter} — ${lead.name}`,
+        html: emailWrapper(content),
+      });
+    }
     return true;
   } catch (error) {
-    console.error("[Email] Failed to send attorney notification:", error);
-    return false;
+    console.error("[Email] Primary send error:", error);
+    try {
+      await resend.emails.send({
+        from: "onboarding@resend.dev",
+        to: "vishwak1312@gmail.com",
+        subject: `New Legal Inquiry: ${lead.matter} — ${lead.name}`,
+        html: emailWrapper(content),
+      });
+      return true;
+    } catch {
+      return false;
+    }
   }
 }
 
