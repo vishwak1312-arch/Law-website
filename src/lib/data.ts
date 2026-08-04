@@ -7,7 +7,7 @@ export const siteConfig = {
   description: "DSP Law Associates provides premium legal services in corporate law, family law, criminal defense, and more. Schedule your confidential consultation today.",
   url: "https://dsplawassociates.com",
   phone: "9866921717",
-  email: "Dsplawassociates@zohomail.in",
+  email: "dsp.lawfirms@gmail.com",
   emergencyPhone: "9866921717",
   address: "Hyderabad, Telangana, India",
   whatsapp: "919866921717",

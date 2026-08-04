@@ -11,7 +11,7 @@ const resend = process.env.RESEND_API_KEY
 const FROM_EMAIL =
   process.env.RESEND_FROM_EMAIL || "noreply@vamshi.com";
 const ATTORNEY_EMAIL =
-  process.env.NEXT_PUBLIC_ATTORNEY_EMAIL || "contact@vamshi.com";
+  process.env.NEXT_PUBLIC_ATTORNEY_EMAIL || "dsp.lawfirms@gmail.com";
 const FIRM_NAME =
   process.env.NEXT_PUBLIC_LAW_FIRM_NAME || "Vamshi Associations";
 
